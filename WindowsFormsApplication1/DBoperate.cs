@@ -34,7 +34,7 @@ namespace WindowsFormsApplication1
                         + foundItem.Daygrowrate + "','"
                         + foundItem.Weekgrowrate + "')"
                         + foundItem.Annualincome + "')"
-                        + foundItem.Date + "')"
+                        + foundItem.Time + "')"
                         , dbConnection);
                     cmd.ExecuteNonQuery();
                 }
@@ -57,19 +57,19 @@ namespace WindowsFormsApplication1
             try
             {
                 dbConnection.Open();
-                cmd = new SqlCommand("Select * from Table_Found where Date ='" + date.ToString() + "'", dbConnection);
+                cmd = new SqlCommand("Select * from Table_Found where Time ='" + date.ToString("D") + "'", dbConnection);//将日期转化为中文格式的字符串进行查找
                 SqlDataReader foundItem = cmd.ExecuteReader();
                 while (foundItem.Read())
                 {
                     Found found = new Found();
                     found.Code = foundItem.GetString(0);
                     found.Name = foundItem.GetString(1);
-                    found.Newnet = foundItem.GetFloat(2);
-                    found.Totalnet = foundItem.GetFloat(3);
-                    found.Dayincrease = foundItem.GetFloat(4);
-                    found.Daygrowrate = foundItem.GetFloat(5);
-                    found.Weekgrowrate = foundItem.GetFloat(6);
-                    found.Annualincome = foundItem.GetFloat(7);
+                    found.Newnet = foundItem.GetString(2);
+                    found.Totalnet = foundItem.GetString(3);
+                    found.Dayincrease = foundItem.GetString(4);
+                    found.Daygrowrate = foundItem.GetString(5);
+                    found.Weekgrowrate = foundItem.GetString(6);
+                    found.Annualincome = foundItem.GetString(7);
                     return found;
                 }
                 return null;
