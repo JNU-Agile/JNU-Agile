@@ -19,3 +19,5 @@ D:\Documents\GitHub\JNU-Agile\WindowsFormsApplication1\bin\Debug\WindowsFormsApp
 D:\Documents\GitHub\JNU-Agile\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.dll
 D:\Documents\GitHub\JNU-Agile\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.pdb
 D:\Documents\GitHub\JNU-Agile\WindowsFormsApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\jc\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\jc\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.pdb

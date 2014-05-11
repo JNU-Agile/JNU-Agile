@@ -43,16 +43,24 @@ namespace WindowsFormsApplication1
                 AllFound.Add(ma.Value);
             }
             List<Found> Foundlist =new List<Found>();
-            for (int n = 0; n < AllFound.Count; n = n + 4)
+            try
             {
-                Found found = new Found();
-                found.Code = AllFound[n];
-                found.Abbr = AllFound[n + 1];
-                found.Name = AllFound[n + 2];
-                found.Type = AllFound[n + 3];
-                Foundlist.Add(found);
+                for (int n = 0; n < AllFound.Count; n = n + 4)
+                {
+                    Found found = new Found();
+                    found.Code = AllFound[n];
+                    found.Abbr = AllFound[n + 1];
+                    found.Name = AllFound[n + 2];
+                    found.Type = AllFound[n + 3];
+                    Foundlist.Add(found);
+                }
+                return Foundlist;
             }
-            return Foundlist;
+            catch (Exception e)
+            {
+                Console.Write(e.ToString());
+                return null;
+            }
         }
     }
 }
