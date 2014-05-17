@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace GetNetValueOfFund
+namespace FundHelper
 {
-    class NetValueOfFund
+    public class NetValueOfFund
     {
         public String date;
         //float netValue;

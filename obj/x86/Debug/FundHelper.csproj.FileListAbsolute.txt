@@ -1,0 +1,17 @@
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.exe
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.pdb
+D:\Documents\GitHub\JNU-Agile\bin\Debug\WindowsFormsApplication1.exe
+D:\Documents\GitHub\JNU-Agile\bin\Debug\WindowsFormsApplication1.pdb
+D:\Documents\GitHub\JNU-Agile\bin\Debug\Newtonsoft.Json.pdb
+D:\Documents\GitHub\JNU-Agile\bin\Debug\Newtonsoft.Json.xml
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.csprojResolveAssemblyReference.cache
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.Main.resources
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+D:\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\JNU-Agile\bin\Debug\FundHelper.exe
+C:\Users\Administrator\Desktop\JNU-Agile\bin\Debug\FundHelper.pdb
+C:\Users\Administrator\Desktop\JNU-Agile\obj\x86\Debug\FundHelper.Main.resources
+C:\Users\Administrator\Desktop\JNU-Agile\obj\x86\Debug\FundHelper.Properties.Resources.resources
+C:\Users\Administrator\Desktop\JNU-Agile\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache
+C:\Users\Administrator\Desktop\JNU-Agile\obj\x86\Debug\FundHelper.exe
+C:\Users\Administrator\Desktop\JNU-Agile\obj\x86\Debug\FundHelper.pdb
