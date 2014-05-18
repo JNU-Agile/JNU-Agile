@@ -61,13 +61,90 @@ namespace FundHelper
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible = true;
+            dataGridView2.Visible = false;
+            label4.Text = "基金名";
+        }
+        
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             RowIndex=e.RowIndex;
             FundList[RowIndex].NetValue = webService.getNetValue(FundList[RowIndex].Code.ToString(), progressBar1);
-            dataGridView2.DataSource = FundList[RowIndex].NetValue;
+            label4.Text = FundList[RowIndex].Name;
+            if (FundList[RowIndex].Type == "货币型")
+            {
+                dataGridView2.DataSource = FundList[RowIndex].NetValue;
+                dataGridView2.Columns[0].HeaderText = "净值日期";
+                dataGridView2.Columns[0].Width = 140;
+                dataGridView2.Columns[1].Visible = false;
+                dataGridView2.Columns[2].Visible = false;
+                dataGridView2.Columns[3].Visible = true;
+                dataGridView2.Columns[3].HeaderText = "每万元收益（元）";
+                dataGridView2.Columns[3].Width = 140;
+                dataGridView2.Columns[4].Visible = true;
+                dataGridView2.Columns[4].HeaderText = "7日年化收益率（%）";
+                dataGridView2.Columns[4].Width = 150;
+                dataGridView2.Columns[5].Visible = false;
+                dataGridView2.Columns[6].Visible = false;
+                dataGridView2.Columns[7].HeaderText = "申购状态";
+                dataGridView2.Columns[7].Width = 140;
+                dataGridView2.Columns[8].HeaderText = "赎回状态";
+                dataGridView2.Columns[8].Width = 140;
+                dataGridView2.Columns[9].HeaderText = "分红送配";
+                dataGridView2.Columns[9].Width = 140;
+            }
+            else if (FundList[RowIndex].Type == "理财型")
+            {
+                dataGridView2.DataSource = FundList[RowIndex].NetValue;
+                dataGridView2.Columns[0].HeaderText = "净值日期";
+                dataGridView2.Columns[0].Width = 100;
+                dataGridView2.Columns[1].Visible = false;
+                dataGridView2.Columns[2].Visible = false;
+                dataGridView2.Columns[3].Visible = true;
+                dataGridView2.Columns[3].HeaderText = "每万元收益（元）";
+                dataGridView2.Columns[3].Width = 128;
+                dataGridView2.Columns[4].Visible = true;
+                dataGridView2.Columns[4].HeaderText = "7日年化收益率（%）";
+                dataGridView2.Columns[4].Width = 148;
+                dataGridView2.Columns[5].Visible = true;
+                dataGridView2.Columns[5].HeaderText = "最近运作期年化收益率";
+                dataGridView2.Columns[5].Width = 153;
+                dataGridView2.Columns[6].Visible = false;
+                dataGridView2.Columns[7].HeaderText = "申购状态";
+                dataGridView2.Columns[7].Width = 100;
+                dataGridView2.Columns[8].HeaderText = "赎回状态";
+                dataGridView2.Columns[8].Width = 90;
+                dataGridView2.Columns[9].HeaderText = "分红送配";
+            }
+            else
+            {
+                dataGridView2.DataSource = FundList[RowIndex].NetValue;
+                dataGridView2.Columns[0].HeaderText = "净值日期";
+                dataGridView2.Columns[0].Width = 115;
+                dataGridView2.Columns[1].Visible = true;
+                dataGridView2.Columns[1].HeaderText = "净值";
+                dataGridView2.Columns[1].Width = 115;
+                dataGridView2.Columns[2].Visible = true;
+                dataGridView2.Columns[2].HeaderText = "累计净值";
+                dataGridView2.Columns[2].Width = 115;
+                dataGridView2.Columns[3].Visible = false;
+                dataGridView2.Columns[4].Visible = false;
+                dataGridView2.Columns[5].Visible = false;
+                dataGridView2.Columns[6].Visible = true;
+                dataGridView2.Columns[6].HeaderText = "日增长率";
+                dataGridView2.Columns[6].Width = 115;
+                dataGridView2.Columns[7].HeaderText = "申购状态";
+                dataGridView2.Columns[7].Width = 115;
+                dataGridView2.Columns[8].HeaderText = "赎回状态";
+                dataGridView2.Columns[8].Width = 115;
+                dataGridView2.Columns[9].HeaderText = "分红送配";
+            }
             dataGridView2.Visible = true;
             dataGridView1.Visible = false;
         }
+
     }
 }

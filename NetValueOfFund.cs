@@ -25,20 +25,33 @@ namespace FundHelper
             get { return netValue; }
             set { netValue = value; }
         }
-        //float accumulativeNetValue;
-        private String earningRecently;
-
-        public String EarningRecently
-        {
-            get { return earningRecently; }
-            set { earningRecently = value; }
-        }
         private String accumulativeNetValue;
 
         public String AccumulativeNetValue
         {
             get { return accumulativeNetValue; }
             set { accumulativeNetValue = value; }
+        }
+        private String earningPer10000;
+
+        public String EarningPer10000
+        {
+            get { return earningPer10000; }
+            set { earningPer10000 = value; }
+        }
+        private String earningPer7;
+
+        public String EarningPer7
+        {
+            get { return earningPer7; }
+            set { earningPer7 = value; }
+        }
+        private String earningRecently;
+
+        public String EarningRecently
+        {
+            get { return earningRecently; }
+            set { earningRecently = value; }
         }
         //float dailyGrowthRate;
         private String dailyGrowthRate;
@@ -48,6 +61,8 @@ namespace FundHelper
             get { return dailyGrowthRate; }
             set { dailyGrowthRate = value; }
         }
+        //float accumulativeNetValue;
+        
         private String stateOfPurse;
 
         public String StateOfPurse
@@ -63,20 +78,7 @@ namespace FundHelper
             set { stateOfRedemption = value; }
         }
         //float distribution;
-        private String earningPer7;
-
-        public String EarningPer7
-        {
-            get { return earningPer7; }
-            set { earningPer7 = value; }
-        }
-        private String earningPer10000;
-
-        public String EarningPer10000
-        {
-            get { return earningPer10000; }
-            set { earningPer10000 = value; }
-        }
+        
         private String distribution;
 
         public String Distribution
@@ -84,7 +86,6 @@ namespace FundHelper
             get { return distribution; }
             set { distribution = value; }
         }
-
         public NetValueOfFund()
         {
 
