@@ -11,6 +11,7 @@ using System.Drawing.Drawing2D;
 using System.IO;
 using System.Collections;
 using System.Threading;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace FundHelper
 {
@@ -62,12 +63,7 @@ namespace FundHelper
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            dataGridView1.Visible = true;
-            dataGridView2.Visible = false;
-            label4.Text = "基金名";
-        }
+        
         
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -144,7 +140,111 @@ namespace FundHelper
             }
             dataGridView2.Visible = true;
             dataGridView1.Visible = false;
+            button5.Enabled = false;
+            button4.Enabled = true;
+            button3.Visible = true;
+            button4.Visible = true;
+            button5.Visible = true;
+            label3.Visible = true;
+            label4.Visible = true;
+            label5.Visible = true;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Visible = true;
+            dataGridView2.Visible = false;
+            button3.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            label3.Visible = false;
+            label4.Visible = false;
+            label5.Visible = false;
+            chart1.Series.Clear();
+            chart1.Visible = false;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            button4.Enabled = false;
+            button5.Enabled = true;
+            chart1.Visible = true;
+            dataGridView2.Visible = false;
+            this.ToLineChart();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            button5.Enabled = false;
+            button4.Enabled = true;
+            dataGridView2.Visible = true;
+            chart1.Visible = false;
+        }
+
+        private void ToLineChart()
+        {
+            Fund fund = FundList[RowIndex];
+            Dictionary<string, string> value = new Dictionary<string, string>();
+            ArrayList al = new ArrayList();
+
+            chart1.ChartAreas[0].AxisX.Title = "日期";
+            chart1.ChartAreas[0].AxisY.Title = "净值";
+
+            chart1.ChartAreas[0].CursorX.IsUserEnabled = true;
+            chart1.ChartAreas[0].CursorX.IsUserSelectionEnabled = true;
+            chart1.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
+            //chart1.ChartAreas[0].CursorY.IsUserEnabled = true;
+            //chart1.ChartAreas[0].CursorY.IsUserSelectionEnabled = true;
+            //chart1.ChartAreas[0].AxisY.ScaleView.Zoomable = true;
+
+            chart1.ChartAreas[0].AxisX.ScrollBar.Enabled = true;
+            chart1.ChartAreas[0].AxisX.ScrollBar.IsPositionedInside = true;
+            chart1.ChartAreas[0].AxisX.ScrollBar.Size = 10;
+            chart1.ChartAreas[0].AxisX.ScrollBar.ButtonStyle = ScrollBarButtonStyles.All;
+            chart1.ChartAreas[0].AxisX.ScaleView.SmallScrollSize = double.NaN;
+            chart1.ChartAreas[0].AxisX.ScaleView.SmallScrollMinSize = 2;
+            //chart1.Titles[0].Name = fund.Name + "基金净值变化情况";
+
+            if (chart1.Series.Count < 2)
+            {
+                chart1.Series.Add("Series2");
+                chart1.Series.Add("Series3");
+                chart1.Series["Series3"].ChartType = SeriesChartType.Line;
+                chart1.Series["Series2"].ChartType = SeriesChartType.Line;
+                chart1.Series[0].MarkerStyle = MarkerStyle.Square;
+                chart1.Series[1].MarkerStyle = MarkerStyle.Square;
+            }
+
+            if (fund.NetValue[0].NetValue != string.Empty
+                && fund.NetValue[0].AccumulativeNetValue != string.Empty)
+            {
+                foreach (NetValueOfFund netValue in fund.NetValue)
+                {
+                    value.Add(netValue.Date, netValue.NetValue);
+                    al.Add(netValue.AccumulativeNetValue);
+                }
+                chart1.Series[0].LegendText = "单位净值（元）";
+                chart1.Series[1].LegendText = "累计净值（元）";
+            }
+            if (fund.NetValue[0].EarningPer10000 != string.Empty)
+            {
+                foreach (NetValueOfFund netValue in fund.NetValue)
+                {
+                    value.Add(netValue.Date, netValue.EarningPer10000);
+                }
+                chart1.Series[0].LegendText = "每万份收益（元）";
+                chart1.Series.Remove(chart1.Series[1]);
+            }
+
+            chart1.Series["Series2"].Points.DataBindXY(value.Keys, value.Values);
+            if (al.Count != 0)
+            {
+                chart1.Series["Series3"].Points.DataBindXY(value.Keys, al);
+            }
+            chart1.Visible = true;
+
+        }
+
 
     }
 }

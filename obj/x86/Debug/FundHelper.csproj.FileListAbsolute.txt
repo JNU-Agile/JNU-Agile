@@ -23,3 +23,13 @@ C:\Users\jc\Documents\Visual Studio 2012\Projects\JNU-Agile\obj\x86\Debug\FundHe
 C:\Users\jc\Documents\Visual Studio 2012\Projects\JNU-Agile\obj\x86\Debug\FundHelper.Properties.Resources.resources
 C:\Users\jc\Documents\Visual Studio 2012\Projects\JNU-Agile\obj\x86\Debug\FundHelper.test.resources
 C:\Users\jc\Documents\Visual Studio 2012\Projects\JNU-Agile\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache
+D:\git_file\agile3\obj\x86\Debug\FundHelper.exe
+D:\git_file\agile3\obj\x86\Debug\FundHelper.pdb
+D:\git_file\agile3\bin\Debug\FundHelper.exe
+D:\git_file\agile3\bin\Debug\FundHelper.pdb
+D:\git_file\agile3\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\git_file\agile3\obj\x86\Debug\FundHelper.Main.resources
+D:\git_file\agile3\obj\x86\Debug\FundHelper.Properties.Resources.resources
+D:\git_file\agile3\obj\x86\Debug\FundHelper.test.resources
+D:\git_file\agile3\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\git_file\agile3\obj\x86\Debug\GenerateResource.write.1.tlog
