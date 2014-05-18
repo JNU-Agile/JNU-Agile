@@ -164,7 +164,10 @@ namespace FundHelper
                     FundList2.Add(new NetValueOfFund(date, netValue, earningPer10000, earningPer7, earningRecently, accumulativeNetValue, dailyGrowthRate, stateOfPurse, stateOfRedemption, distribution));
                     flag++;
                     if (progressBar.Value < progressBar.Maximum)
+                    {
+                        Application.DoEvents();
                         progressBar.Value++;
+                    }
                     if (HtmlText.Length < 60)
                         flag = 10000;
                 }
@@ -204,7 +207,10 @@ namespace FundHelper
                     FundList2.Add(new NetValueOfFund(date, netValue, earningPer10000, earningPer7, earningRecently, accumulativeNetValue, dailyGrowthRate, stateOfPurse, stateOfRedemption, distribution));
                     flag++;
                     if (progressBar.Value < progressBar.Maximum)
+                    {
+                        Application.DoEvents();
                         progressBar.Value++;
+                    }
                     if (HtmlText.Length < 60)
                         flag = 10000;
                 }
@@ -245,7 +251,10 @@ namespace FundHelper
                     FundList2.Add(new NetValueOfFund(date, netValue, earningPer10000, earningPer7, earningRecently, accumulativeNetValue, dailyGrowthRate, stateOfPurse, stateOfRedemption, distribution));
                     flag++;
                     if (progressBar.Value < progressBar.Maximum)
+                    {
+                        Application.DoEvents();
                         progressBar.Value++;
+                    }
                     if (HtmlText.Length < 60)
                         flag = 10000;
                 }

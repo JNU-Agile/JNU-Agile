@@ -32,23 +32,15 @@ namespace FundHelper
         private static int RowIndex;
         private static WebService webService = new WebService();
         private static List<Fund> FundList = new List<Fund>();
-        private void GetNetValue()
-        {
-            FundList[RowIndex].NetValue = webService.getNetValue(FundList[RowIndex].Code.ToString(),progressBar1);
+        
 
-            //for test
-            String result = "test\n";
-            for (int i = 0; i < 3; i++)
-                result += FundList[RowIndex].NetValue[i].date + ": " + FundList[RowIndex].NetValue[i].netValue + "\n";
-            MessageBox.Show(result);
-
-        }
         public Main()
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             FundList = webService.GetAllFund();
             dataGridView1.DataSource = FundList;
+            
             dataGridView1.Columns[0].HeaderText = "基金代码";
             dataGridView1.Columns[0].Width = 100;
             dataGridView1.Columns[1].HeaderText = "简称";
@@ -57,6 +49,7 @@ namespace FundHelper
             dataGridView1.Columns[2].Width = 300;
             dataGridView1.Columns[3].HeaderText = "类型";
             dataGridView1.Columns[3].Width = 200;
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,8 +64,10 @@ namespace FundHelper
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             RowIndex=e.RowIndex;
-            Thread t = new Thread(GetNetValue);
-            t.Start();
+            FundList[RowIndex].NetValue = webService.getNetValue(FundList[RowIndex].Code.ToString(), progressBar1);
+            dataGridView2.DataSource = FundList[RowIndex].NetValue;
+            dataGridView2.Visible = true;
+            dataGridView1.Visible = false;
         }
     }
 }
