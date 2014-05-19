@@ -17,19 +17,7 @@ namespace FundHelper
 {
     public partial class Main : Form
     {
-        //无边框窗口拖动代码
-        [DllImport("user32.dll")]
-        public static extern bool ReleaseCapture();
-        [DllImport("user32.dll")]
-        public static extern bool SendMessage(IntPtr hwnd, int wMsg, int wParam, int lParam);
-        public const int WM_SYSCOMMAND = 0x0112;
-        public const int SC_MOVE = 0xF010;
-        public const int HTCAPTION = 0x0002;
-        private void main_MouseDown(object sender, MouseEventArgs e)
-        {
-            ReleaseCapture();
-            SendMessage(this.Handle, WM_SYSCOMMAND, SC_MOVE + HTCAPTION, 0);
-        }
+        private static Search search = new Search();
         private static int RowIndex;
         private static WebService webService = new WebService();
         private static List<Fund> FundList = new List<Fund>();
@@ -40,8 +28,10 @@ namespace FundHelper
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             FundList = webService.GetAllFund();
+            var q = from f in FundList
+                    select f.Type;
+            comboBox2.DataSource = q.Distinct().ToList();  
             dataGridView1.DataSource = FundList;
-
             dataGridView1.Columns[0].HeaderText = "基金代码";
             dataGridView1.Columns[0].Width = 100;
             dataGridView1.Columns[1].HeaderText = "简称";
@@ -52,18 +42,6 @@ namespace FundHelper
             dataGridView1.Columns[3].Width = 200;
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        
-        
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex == -1)
@@ -262,6 +240,35 @@ namespace FundHelper
 
             chart1.ChartAreas[0].CursorX.SetCursorPixelPosition(new PointF(_currentPointX, _currentPointY), true);
             chart1.ChartAreas[0].CursorY.SetCursorPixelPosition(new PointF(_currentPointX, _currentPointY), true);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int result = -1;
+            if (comboBox1.SelectedIndex == 0)
+                result = search.SearchByCode(FundList, textBox1.Text);
+            else
+                result = search.SearchByName(FundList, textBox1.Text);
+            if (result < 0)
+                MessageBox.Show("搜索失败");
+            else
+            {
+                dataGridView1.ClearSelection();
+                dataGridView1.Rows[result].Selected = true;
+                dataGridView1.FirstDisplayedScrollingRowIndex = result;
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            dataGridView1.ClearSelection();
+            for (int i = 0; i < FundList.Count; i++)
+            {
+                if (FundList[i].Type == comboBox2.SelectedItem.ToString())
+                {
+                    dataGridView1.Rows[i].Selected = true;
+                }
+            }
         }
 
 
