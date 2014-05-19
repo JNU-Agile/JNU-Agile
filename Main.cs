@@ -248,10 +248,20 @@ namespace FundHelper
             if (al.Count != 0)
             {
                 chart1.Series["Series3"].Points.DataBindXY(value.Keys, al);
+                chart1.Series[1].ToolTip = "日期：#VALX\n净值：#VAL";
             }
             chart1.Series["Series2"].Points.DataBindXY(value.Keys, value.Values);
+            chart1.Series[0].ToolTip = "日期：#VALX\n净值：#VAL";
             chart1.Visible = true;
+        }
 
+        private void chart1_MouseMove(object sender, MouseEventArgs e)
+        {
+            int _currentPointX = e.X;
+            int _currentPointY = e.Y;
+
+            chart1.ChartAreas[0].CursorX.SetCursorPixelPosition(new PointF(_currentPointX, _currentPointY), true);
+            chart1.ChartAreas[0].CursorY.SetCursorPixelPosition(new PointF(_currentPointX, _currentPointY), true);
         }
 
 
