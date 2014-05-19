@@ -41,7 +41,7 @@ namespace FundHelper
             comboBox1.SelectedIndex = 0;
             FundList = webService.GetAllFund();
             dataGridView1.DataSource = FundList;
-            
+
             dataGridView1.Columns[0].HeaderText = "基金代码";
             dataGridView1.Columns[0].Width = 100;
             dataGridView1.Columns[1].HeaderText = "简称";
@@ -50,7 +50,6 @@ namespace FundHelper
             dataGridView1.Columns[2].Width = 300;
             dataGridView1.Columns[3].HeaderText = "类型";
             dataGridView1.Columns[3].Width = 200;
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -67,6 +66,10 @@ namespace FundHelper
         
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1)
+            {
+                return;
+            }
             RowIndex=e.RowIndex;
             FundList[RowIndex].NetValue = webService.getNetValue(FundList[RowIndex].Code.ToString(), progressBar1);
             label4.Text = FundList[RowIndex].Name;
@@ -160,7 +163,6 @@ namespace FundHelper
             label3.Visible = false;
             label4.Visible = false;
             label5.Visible = false;
-            chart1.Series.Clear();
             chart1.Visible = false;
         }
 
@@ -170,6 +172,7 @@ namespace FundHelper
             button5.Enabled = true;
             chart1.Visible = true;
             dataGridView2.Visible = false;
+            chart1.Series.Clear();
             this.ToLineChart();
         }
 
@@ -178,6 +181,7 @@ namespace FundHelper
             button5.Enabled = false;
             button4.Enabled = true;
             dataGridView2.Visible = true;
+            chart1.Series.Clear();
             chart1.Visible = false;
         }
 
@@ -190,9 +194,10 @@ namespace FundHelper
             chart1.ChartAreas[0].AxisX.Title = "日期";
             chart1.ChartAreas[0].AxisY.Title = "净值";
 
-            chart1.ChartAreas[0].CursorX.IsUserEnabled = true;
-            chart1.ChartAreas[0].CursorX.IsUserSelectionEnabled = true;
+            //chart1.ChartAreas[0].CursorX.IsUserEnabled = true;
+            //chart1.ChartAreas[0].CursorX.IsUserSelectionEnabled = true;
             chart1.ChartAreas[0].AxisX.ScaleView.Zoomable = true;
+            chart1.ChartAreas[0].AxisY.ScaleView.Zoomable = true;
             //chart1.ChartAreas[0].CursorY.IsUserEnabled = true;
             //chart1.ChartAreas[0].CursorY.IsUserSelectionEnabled = true;
             //chart1.ChartAreas[0].AxisY.ScaleView.Zoomable = true;
@@ -205,14 +210,17 @@ namespace FundHelper
             chart1.ChartAreas[0].AxisX.ScaleView.SmallScrollMinSize = 2;
             //chart1.Titles[0].Name = fund.Name + "基金净值变化情况";
 
+            //无数据情况
+            if (fund.NetValue.Count == 0)
+            {
+                return;
+            }
             if (chart1.Series.Count < 2)
             {
                 chart1.Series.Add("Series2");
                 chart1.Series.Add("Series3");
                 chart1.Series["Series3"].ChartType = SeriesChartType.Line;
                 chart1.Series["Series2"].ChartType = SeriesChartType.Line;
-                chart1.Series[0].MarkerStyle = MarkerStyle.Square;
-                chart1.Series[1].MarkerStyle = MarkerStyle.Square;
             }
 
             if (fund.NetValue[0].NetValue != string.Empty
@@ -233,14 +241,15 @@ namespace FundHelper
                     value.Add(netValue.Date, netValue.EarningPer10000);
                 }
                 chart1.Series[0].LegendText = "每万份收益（元）";
+                //chart1.Legends[0].Position
                 chart1.Series.Remove(chart1.Series[1]);
             }
 
-            chart1.Series["Series2"].Points.DataBindXY(value.Keys, value.Values);
             if (al.Count != 0)
             {
                 chart1.Series["Series3"].Points.DataBindXY(value.Keys, al);
             }
+            chart1.Series["Series2"].Points.DataBindXY(value.Keys, value.Values);
             chart1.Visible = true;
 
         }
