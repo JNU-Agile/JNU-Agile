@@ -1,0 +1,10 @@
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\SearchTest.dll
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\SearchTest.pdb
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\FundHelper.exe
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\Newtonsoft.Json.dll
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\FundHelper.pdb
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\FundHelper_Accessor.exe
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\FundHelper_Accessor.pdb
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.csprojResolveAssemblyReference.cache
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.dll
+C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.pdb

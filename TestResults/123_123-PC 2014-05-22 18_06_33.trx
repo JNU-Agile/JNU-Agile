@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="a3db1d44-ac0c-44bd-9eb0-42900c04c96f" name="123@123-PC 2014-05-22 18:06:33" runUser="123-PC\123" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="123_123-PC 2014-05-22 18_06_33">
+      <DeploymentItem filename="C:\Users\123\Documents\GitHub\JNU-Agile\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="C:\Users\123\Documents\GitHub\JNU-Agile\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-05-22T18:06:33.4931148+08:00" queuing="2014-05-22T18:06:39.4531232+08:00" start="2014-05-22T18:06:39.5631233+08:00" finish="2014-05-22T18:06:44.0901451+08:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="1" executed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="1" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="123-PC" outcome="Warning" timestamp="2014-05-22T18:06:38.8331223+08:00">
+        <Text>当前已禁用部署。未部署测试“SearchTest.SearchTest.SearchConstructorTest”中的部署项“FundHelper.exe”。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="SearchConstructorTest" storage="c:\users\123\documents\github\jnu-agile\searchtest\bin\debug\searchtest.dll" id="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="0fb5171a-e2c9-49ed-9765-1e0c1a6d68d2" />
+      <TestMethod codeBase="C:/Users/123/Documents/GitHub/JNU-Agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" executionId="0fb5171a-e2c9-49ed-9765-1e0c1a6d68d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="0fb5171a-e2c9-49ed-9765-1e0c1a6d68d2" testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" testName="SearchConstructorTest" computerName="123-PC" duration="00:00:00.1678907" startTime="2014-05-22T18:06:39.5931234+08:00" endTime="2014-05-22T18:06:43.9701450+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0fb5171a-e2c9-49ed-9765-1e0c1a6d68d2">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 SearchTest.SearchTest.SearchConstructorTest() 位置 C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\SearchTest.cs:行号 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
