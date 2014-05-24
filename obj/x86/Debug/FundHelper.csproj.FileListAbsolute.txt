@@ -40,3 +40,12 @@ C:\Users\123\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.csprojResolveAs
 C:\Users\123\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.Main.resources
 C:\Users\123\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.Properties.Resources.resources
 C:\Users\123\Documents\GitHub\JNU-Agile\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache
+D:\git_file\agile\obj\x86\Debug\FundHelper.exe
+D:\git_file\agile\obj\x86\Debug\FundHelper.pdb
+D:\git_file\agile\bin\Debug\FundHelper.exe
+D:\git_file\agile\bin\Debug\FundHelper.pdb
+D:\git_file\agile\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\git_file\agile\obj\x86\Debug\FundHelper.Main.resources
+D:\git_file\agile\obj\x86\Debug\FundHelper.Properties.Resources.resources
+D:\git_file\agile\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\git_file\agile\obj\x86\Debug\GenerateResource.write.1.tlog

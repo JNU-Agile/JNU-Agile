@@ -8,3 +8,13 @@ C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\bin\Debug\FundHelper_Accessor
 C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.csprojResolveAssemblyReference.cache
 C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.dll
 C:\Users\123\Documents\GitHub\JNU-Agile\SearchTest\obj\Debug\SearchTest.pdb
+D:\git_file\agile\SearchTest\bin\Debug\SearchTest.dll
+D:\git_file\agile\SearchTest\bin\Debug\SearchTest.pdb
+D:\git_file\agile\SearchTest\bin\Debug\FundHelper.exe
+D:\git_file\agile\SearchTest\bin\Debug\Newtonsoft.Json.dll
+D:\git_file\agile\SearchTest\bin\Debug\FundHelper.pdb
+D:\git_file\agile\SearchTest\bin\Debug\FundHelper_Accessor.exe
+D:\git_file\agile\SearchTest\bin\Debug\FundHelper_Accessor.pdb
+D:\git_file\agile\SearchTest\obj\Debug\ResolveAssemblyReference.cache
+D:\git_file\agile\SearchTest\obj\Debug\SearchTest.dll
+D:\git_file\agile\SearchTest\obj\Debug\SearchTest.pdb

@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="11c2159f-0640-4846-bda3-dd6882c31e38" name="WGC@WGC-PC 2014-05-24 17:49:22" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-05-24 17_49_22">
+      <DeploymentItem filename="D:\git_file\agile\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-05-24T17:49:22.4401237+08:00" queuing="2014-05-24T17:49:22.4671252+08:00" start="2014-05-24T17:49:22.4781258+08:00" finish="2014-05-24T17:49:23.6581933+08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="5" executed="5" passed="3" error="0" failed="2" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="WGC-PC" outcome="Warning" timestamp="2014-05-24T17:49:22.4661252+08:00">
+        <Text>当前已禁用部署。未部署测试“SearchTest.SearchTest.Search_SearchByCodeTest1”中的部署项“FundHelper.exe”。</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Search_SearchByCodeTest1" storage="d:\git_file\agile\searchtest\bin\debug\searchtest.dll" id="885226bb-3bc1-c27b-1bfe-9c217144577b">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="17c9af5d-5b70-4b09-882b-be8771d762e2" />
+      <TestMethod codeBase="D:/git_file/agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByCodeTest1" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByNameTest1" storage="d:\git_file\agile\searchtest\bin\debug\searchtest.dll" id="3d4fa690-dcaf-92a2-a8e4-a3689e99e105">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="d2e1a76c-e01e-4292-b984-120f7c4d3334" />
+      <TestMethod codeBase="D:/git_file/agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByNameTest1" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByCodeTest2" storage="d:\git_file\agile\searchtest\bin\debug\searchtest.dll" id="a77bd008-9d31-9564-922a-8dedfa4d9ef5">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="7d0c388c-b131-4eeb-8624-dee704f3d4cb" />
+      <TestMethod codeBase="D:/git_file/agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByCodeTest2" />
+    </UnitTest>
+    <UnitTest name="SearchConstructorTest" storage="d:\git_file\agile\searchtest\bin\debug\searchtest.dll" id="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="b8de8b37-1ee3-44c3-8a8b-e2a93e3ea646" />
+      <TestMethod codeBase="D:/git_file/agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByNameTest2" storage="d:\git_file\agile\searchtest\bin\debug\searchtest.dll" id="1088fdeb-28ef-0752-3498-b93f358b8a4b">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="d23ca286-38a0-487d-a620-33652aec3df3" />
+      <TestMethod codeBase="D:/git_file/agile/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByNameTest2" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1088fdeb-28ef-0752-3498-b93f358b8a4b" executionId="d23ca286-38a0-487d-a620-33652aec3df3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="885226bb-3bc1-c27b-1bfe-9c217144577b" executionId="17c9af5d-5b70-4b09-882b-be8771d762e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d4fa690-dcaf-92a2-a8e4-a3689e99e105" executionId="d2e1a76c-e01e-4292-b984-120f7c4d3334" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a77bd008-9d31-9564-922a-8dedfa4d9ef5" executionId="7d0c388c-b131-4eeb-8624-dee704f3d4cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" executionId="b8de8b37-1ee3-44c3-8a8b-e2a93e3ea646" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d23ca286-38a0-487d-a620-33652aec3df3" testId="1088fdeb-28ef-0752-3498-b93f358b8a4b" testName="Search_SearchByNameTest2" computerName="WGC-PC" duration="00:00:00.3879010" startTime="2014-05-24T17:49:22.4831261+08:00" endTime="2014-05-24T17:49:23.1181625+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d23ca286-38a0-487d-a620-33652aec3df3">
+      <Output>
+        <StdOut>1154 0 2309
+576 0 1153
+865 577 1153
+720 577 864
+792 721 864
+828 793 864
+810 793 827
+819 811 827
+823 820 827
+825 824 827
+824 824 824
+1154 0 2309
+576 0 1153
+287 0 575
+143 0 286
+71 0 142
+35 0 70
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;0&gt;，实际为: &lt;1&gt;。</Message>
+          <StackTrace>   在 SearchTest.SearchTest.Search_SearchByNameTest2() 位置 D:\git_file\agile\SearchTest\SearchTest.cs:行号 133
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="17c9af5d-5b70-4b09-882b-be8771d762e2" testId="885226bb-3bc1-c27b-1bfe-9c217144577b" testName="Search_SearchByCodeTest1" computerName="WGC-PC" duration="00:00:00.1891754" startTime="2014-05-24T17:49:23.1281630+08:00" endTime="2014-05-24T17:49:23.3221741+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17c9af5d-5b70-4b09-882b-be8771d762e2">
+      <Output>
+        <StdOut>1154 0 2309
+576 0 1153
+287 0 575
+143 0 286
+71 0 142
+35 0 70
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+        <ErrorInfo>
+          <Message>Assert.AreEqual 失败。应为: &lt;0&gt;，实际为: &lt;-2&gt;。</Message>
+          <StackTrace>   在 SearchTest.SearchTest.Search_SearchByCodeTest1() 位置 D:\git_file\agile\SearchTest\SearchTest.cs:行号 89
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d2e1a76c-e01e-4292-b984-120f7c4d3334" testId="3d4fa690-dcaf-92a2-a8e4-a3689e99e105" testName="Search_SearchByNameTest1" computerName="WGC-PC" duration="00:00:00.1529427" startTime="2014-05-24T17:49:23.3261744+08:00" endTime="2014-05-24T17:49:23.4911838+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d2e1a76c-e01e-4292-b984-120f7c4d3334">
+      <Output>
+        <StdOut>1154 0 2309
+576 0 1153
+865 577 1153
+720 577 864
+792 721 864
+828 793 864
+810 793 827
+819 811 827
+823 820 827
+825 824 827
+824 824 824
+1154 0 2309
+576 0 1153
+287 0 575
+143 0 286
+71 0 142
+35 0 70
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7d0c388c-b131-4eeb-8624-dee704f3d4cb" testId="a77bd008-9d31-9564-922a-8dedfa4d9ef5" testName="Search_SearchByCodeTest2" computerName="WGC-PC" duration="00:00:00.1290721" startTime="2014-05-24T17:49:23.4951840+08:00" endTime="2014-05-24T17:49:23.6291917+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7d0c388c-b131-4eeb-8624-dee704f3d4cb">
+      <Output>
+        <StdOut>1154 0 2309
+576 0 1153
+287 0 575
+143 0 286
+71 0 142
+35 0 70
+17 0 34
+8 0 16
+3 0 7
+1 0 2</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b8de8b37-1ee3-44c3-8a8b-e2a93e3ea646" testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" testName="SearchConstructorTest" computerName="WGC-PC" duration="00:00:00.0003262" startTime="2014-05-24T17:49:23.6311918+08:00" endTime="2014-05-24T17:49:23.6371921+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b8de8b37-1ee3-44c3-8a8b-e2a93e3ea646">
+    </UnitTestResult>
+  </Results>
+</TestRun>

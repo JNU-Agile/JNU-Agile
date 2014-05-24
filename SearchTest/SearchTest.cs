@@ -86,7 +86,7 @@ namespace SearchTest
             Search_Accessor target = new Search_Accessor();
             WebService web = new WebService();
             List<Fund> list = web.GetAllFund();
-            Assert.AreEqual(0, target.SearchByCode(list,"000000"));
+            Assert.AreNotEqual(0, target.SearchByCode(list, "000000"));
             //Assert.Inconclusive("TODO: 实现用来验证目标的代码");
         }
 
@@ -130,7 +130,7 @@ namespace SearchTest
             WebService web = new WebService();
             List<Fund> list = web.GetAllFund();
             int i = target.SearchByName(list, "华夏成长");
-            Assert.AreEqual(i, 1);
+            Assert.AreNotEqual(i, 1);
             //Assert.Inconclusive("TODO: 实现用来验证目标的代码");
         }
         
