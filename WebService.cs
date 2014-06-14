@@ -70,8 +70,63 @@ namespace FundHelper
                 Console.WriteLine(e.ToString());
                 return null;
             }
-            return Fundlist;
+            HtmlText = GetWebContent("http://fund.eastmoney.com/fund.html", Encoding.GetEncoding("gb2312"));
+            int head = 0;
+            head = HtmlText.IndexOf("type=\"checkbox\" id=", head);
+            int foot = 0;
+            String code;
+            Double netValueToday, totalNetValueToday, netValueInsToday, netValueInsRateToday;
 
+            while (head > 0)
+            {
+
+                head = HtmlText.IndexOf("</td><td>", head) + 1;
+                head = HtmlText.IndexOf("</td><td>", head) + 9;
+                foot = head + 6;
+
+                code = HtmlText.Substring(head, foot - head);
+                head = HtmlText.IndexOf("<td class=\"TD2\">", head);
+                head += 16;
+                foot = HtmlText.IndexOf("<", head);
+                netValueToday = Convert.ToDouble(HtmlText.Substring(head, foot - head) == "---" ? "-1" : HtmlText.Substring(head, foot - head));
+
+                head = HtmlText.IndexOf("<td class=\"TD2\">", head);
+                head += 16;
+                foot = HtmlText.IndexOf("<", head);
+                totalNetValueToday = Convert.ToDouble(HtmlText.Substring(head, foot - head) == "---" ? "-1" : HtmlText.Substring(head, foot - head));
+
+
+                head = HtmlText.IndexOf("<td class=", head) + 1;
+                head = HtmlText.IndexOf("<td class=", head) + 1;
+                head = HtmlText.IndexOf("<td class=", head) + 1;
+                head = HtmlText.IndexOf("'>", head);
+                head += 2;
+                foot = HtmlText.IndexOf("<", head);
+                netValueInsToday = Convert.ToDouble(HtmlText.Substring(head, foot - head) == "---" ? "-1" : HtmlText.Substring(head, foot - head));
+
+                foot += 10;
+                head = HtmlText.IndexOf(">", foot);
+                head += 1;
+                foot = HtmlText.IndexOf("<", head);
+
+                netValueInsRateToday = Convert.ToDouble(HtmlText.Substring(head, foot - head) == "---" ? "-1" : HtmlText.Substring(head, foot - head - 1));
+
+                foreach (Fund f in Fundlist)
+                {
+                    if (f.Code == code)
+                    {
+                        f.NetValueToday = netValueToday;
+                        f.TotalNetValueToday = totalNetValueToday;
+                        f.NetValueInsToday = netValueInsToday;
+                        f.NetValueInsRateToday = netValueInsRateToday;
+                    }
+                }
+
+                head = HtmlText.IndexOf("type=\"checkbox\" id=", foot);
+                //MessageBox.Show(HtmlText.Substring(head, 500));
+            }
+            return Fundlist;
+            
         }
 
         public List<NetValueOfFund> getNetValue(String code,ProgressBar progressBar)
@@ -263,6 +318,7 @@ namespace FundHelper
             }
             return FundList2;
 
+            #region 基金数据写入文件的方法
             //new NetValueOfFund(date, netValue, accumulativeNetValue, dailyGrowthRate, stateOfPurse, stateOfRedemption);
             /* 导出
             String result2 = String.Empty;
@@ -300,6 +356,7 @@ namespace FundHelper
             sr.Write(h2);
             sr.Close();
             */
+            #endregion
 
         }
     }

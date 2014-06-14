@@ -21,25 +21,64 @@ namespace FundHelper
         private static int RowIndex;
         private static WebService webService = new WebService();
         private static List<Fund> FundList = new List<Fund>();
-        
 
+
+        //酒店排序方法：当日净值高到低
+        public class Sort1 : IComparer<Fund>
+        {
+            public int Compare(Fund x, Fund y)
+            {
+                return (y.NetValueToday.CompareTo(x.NetValueToday));
+            }
+        }
+        //酒店排序方法：累计净值高到低
+        public class Sort2 : IComparer<Fund>
+        {
+            public int Compare(Fund x, Fund y)
+            {
+                return (y.TotalNetValueToday.CompareTo(x.TotalNetValueToday));
+            }
+        }
+        //酒店排序方法：日增长值高到低
+        public class Sort3 : IComparer<Fund>
+        {
+            public int Compare(Fund x, Fund y)
+            {
+                return (y.NetValueInsToday.CompareTo(x.NetValueInsToday));
+            }
+        }
+        //酒店排序方法：日增长率高到低
+        public class Sort4 : IComparer<Fund>
+        {
+            public int Compare(Fund x, Fund y)
+            {
+                return (y.NetValueInsRateToday.CompareTo(x.NetValueInsRateToday));
+            }
+        }
         public Main()
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             FundList = webService.GetAllFund();
+            InitDataGridView1();
+        }
+
+        private void InitDataGridView1()
+        {
             var q = from f in FundList
                     select f.Type;
-            comboBox2.DataSource = q.Distinct().ToList();  
+            comboBox2.DataSource = q.Distinct().ToList();
             dataGridView1.DataSource = FundList;
+            /*
             dataGridView1.Columns[0].HeaderText = "基金代码";
-            dataGridView1.Columns[0].Width = 100;
+            dataGridView1.Columns[0].Width = 50;
             dataGridView1.Columns[1].HeaderText = "简称";
-            dataGridView1.Columns[1].Width = 200;
+            dataGridView1.Columns[1].Width = 100;
             dataGridView1.Columns[2].HeaderText = "全称";
-            dataGridView1.Columns[2].Width = 300;
+            dataGridView1.Columns[2].Width = 150;
             dataGridView1.Columns[3].HeaderText = "类型";
-            dataGridView1.Columns[3].Width = 200;
+            dataGridView1.Columns[3].Width = 100;
+             */
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -269,6 +308,39 @@ namespace FundHelper
                     dataGridView1.Rows[i].Selected = true;
                 }
             }
+        }
+
+        //选择排名依据
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            FundList = webService.GetAllFund();
+            InitDataGridView1();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (comboBox3.SelectedIndex == 0)
+            {
+                FundList.Sort(new Sort1());
+            }
+            else if (comboBox3.SelectedIndex == 1)
+            {
+                FundList.Sort(new Sort2());
+            }
+            else if (comboBox3.SelectedIndex == 2)
+            {
+                FundList.Sort(new Sort3());
+            }
+            else if (comboBox3.SelectedIndex == 3)
+            {
+                FundList.Sort(new Sort4());
+            }
+            dataGridView1.DataSource = FundList;
         }
 
 

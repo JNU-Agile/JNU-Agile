@@ -34,6 +34,36 @@ namespace FundHelper
             get { return type; }
             set { type = value; }
         }
+        private Double netValueToday;
+
+        public Double NetValueToday
+        {
+            get { return netValueToday; }
+            set { netValueToday = value; }
+        }
+        private Double totalNetValueToday;
+
+        public Double TotalNetValueToday
+        {
+            get { return totalNetValueToday; }
+            set { totalNetValueToday = value; }
+        }
+        private Double netValueInsToday;
+
+        public Double NetValueInsToday
+        {
+            get { return netValueInsToday; }
+            set { netValueInsToday = value; }
+        }
+        private Double netValueInsRateToday;
+
+        public Double NetValueInsRateToday
+        {
+            get { return netValueInsRateToday; }
+            set { netValueInsRateToday = value; }
+        }
+
+
         private List<NetValueOfFund> netValue = new List<NetValueOfFund>();
 
         public List<NetValueOfFund> NetValue
