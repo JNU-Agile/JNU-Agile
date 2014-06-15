@@ -69,14 +69,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChartUITest1.cs" />
+    <Compile Include="FilterUITest1.cs" />
+    <Compile Include="NetValueOfFundTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SearchTest.cs" />
+    <Compile Include="SearchUITest1.cs" />
+    <Compile Include="SortUITest1.cs" />
     <Compile Include="UIMap.cs">
       <DependentUpon>UIMap.uitest</DependentUpon>
     </Compile>
     <Compile Include="UIMap.Designer.cs">
       <DependentUpon>UIMap.uitest</DependentUpon>
     </Compile>
+    <Compile Include="WebServiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <Shadow Include="测试引用\FundHelper.accessor" />

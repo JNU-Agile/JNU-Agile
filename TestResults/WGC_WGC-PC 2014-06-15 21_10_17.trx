@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="e85db85f-9134-402b-8e33-ac43f0f34c92" name="WGC@WGC-PC 2014-06-15 21:10:17" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 21_10_17">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T21:10:17.3014740+08:00" queuing="2014-06-15T21:10:17.3114740+08:00" start="2014-06-15T21:10:17.3214740+08:00" finish="2014-06-15T21:10:17.9614749+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetWebContentTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="965bf3b5-3bfd-63f8-aa9b-560034172765">
+      <Execution id="c6758c9a-9d63-4d5d-b325-b72b82f3f4fc" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetWebContentTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="965bf3b5-3bfd-63f8-aa9b-560034172765" executionId="c6758c9a-9d63-4d5d-b325-b72b82f3f4fc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c6758c9a-9d63-4d5d-b325-b72b82f3f4fc" testId="965bf3b5-3bfd-63f8-aa9b-560034172765" testName="GetWebContentTest" computerName="WGC-PC" duration="00:00:00.3741635" startTime="2014-06-15T21:10:17.3314741+08:00" endTime="2014-06-15T21:10:17.9314749+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c6758c9a-9d63-4d5d-b325-b72b82f3f4fc">
+    </UnitTestResult>
+  </Results>
+</TestRun>

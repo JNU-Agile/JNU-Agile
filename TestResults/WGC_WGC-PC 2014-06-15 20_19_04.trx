@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="086583b6-97bc-43e7-bb2a-3bb2e3b0a6d5" name="WGC@WGC-PC 2014-06-15 20:19:04" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 20_19_04">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T20:19:04.7320937+08:00" queuing="2014-06-15T20:19:04.7820938+08:00" start="2014-06-15T20:19:04.8020938+08:00" finish="2014-06-15T20:19:05.1720943+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NetValueOfFundConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1">
+      <Execution id="735a8c6d-40dc-46a3-ad70-7a73353fb29b" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.NetValueOfFundTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NetValueOfFundConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" executionId="735a8c6d-40dc-46a3-ad70-7a73353fb29b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="735a8c6d-40dc-46a3-ad70-7a73353fb29b" testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" testName="NetValueOfFundConstructorTest" computerName="WGC-PC" duration="00:00:00.0484850" startTime="2014-06-15T20:19:04.8120938+08:00" endTime="2014-06-15T20:19:05.1520943+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="735a8c6d-40dc-46a3-ad70-7a73353fb29b">
+    </UnitTestResult>
+  </Results>
+</TestRun>

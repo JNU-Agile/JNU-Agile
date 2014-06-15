@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7e888d71-9ae1-477b-8a11-1c7e25591e8e" name="WGC@WGC-PC 2014-06-15 22:18:38" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 22_18_38">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T22:18:38.6858465+08:00" queuing="2014-06-15T22:18:38.7326466+08:00" start="2014-06-15T22:18:38.7482467+08:00" finish="2014-06-15T22:18:40.3550495+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="5" executed="5" passed="5" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="NetValueOfFundConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1">
+      <Execution id="f4e09b85-d4e5-48da-ae4e-bd96405750b9" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.NetValueOfFundTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NetValueOfFundConstructorTest" />
+    </UnitTest>
+    <UnitTest name="GetAllFundTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="9d256cf2-7769-314c-12d8-ead0c255911e">
+      <Execution id="67ccae8e-280c-4935-9389-4e5a0c6719b4" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllFundTest" />
+    </UnitTest>
+    <UnitTest name="WebServiceConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="1ec3b225-95d9-634f-ffd5-374d80bbec37">
+      <Execution id="f5d98eb1-eab0-4e73-a955-99ab52cac838" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WebServiceConstructorTest" />
+    </UnitTest>
+    <UnitTest name="getNetValueTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="e936e606-993c-fa42-c77c-842e36450f9b">
+      <Execution id="c4ca6a31-b39f-4ce7-9905-535f37510da8" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNetValueTest" />
+    </UnitTest>
+    <UnitTest name="GetWebContentTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="965bf3b5-3bfd-63f8-aa9b-560034172765">
+      <Execution id="847bf77e-022c-4905-a63a-9e9636b22c53" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetWebContentTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" executionId="f4e09b85-d4e5-48da-ae4e-bd96405750b9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="965bf3b5-3bfd-63f8-aa9b-560034172765" executionId="847bf77e-022c-4905-a63a-9e9636b22c53" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d256cf2-7769-314c-12d8-ead0c255911e" executionId="67ccae8e-280c-4935-9389-4e5a0c6719b4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e936e606-993c-fa42-c77c-842e36450f9b" executionId="c4ca6a31-b39f-4ce7-9905-535f37510da8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ec3b225-95d9-634f-ffd5-374d80bbec37" executionId="f5d98eb1-eab0-4e73-a955-99ab52cac838" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="f4e09b85-d4e5-48da-ae4e-bd96405750b9" testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" testName="NetValueOfFundConstructorTest" computerName="WGC-PC" duration="00:00:00.0165112" startTime="2014-06-15T22:18:38.7482467+08:00" endTime="2014-06-15T22:18:38.9822471+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f4e09b85-d4e5-48da-ae4e-bd96405750b9">
+    </UnitTestResult>
+    <UnitTestResult executionId="847bf77e-022c-4905-a63a-9e9636b22c53" testId="965bf3b5-3bfd-63f8-aa9b-560034172765" testName="GetWebContentTest" computerName="WGC-PC" duration="00:00:00.7834236" startTime="2014-06-15T22:18:38.9822471+08:00" endTime="2014-06-15T22:18:39.7778485+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="847bf77e-022c-4905-a63a-9e9636b22c53">
+    </UnitTestResult>
+    <UnitTestResult executionId="67ccae8e-280c-4935-9389-4e5a0c6719b4" testId="9d256cf2-7769-314c-12d8-ead0c255911e" testName="GetAllFundTest" computerName="WGC-PC" duration="00:00:00.3283739" startTime="2014-06-15T22:18:39.8090485+08:00" endTime="2014-06-15T22:18:40.1366491+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="67ccae8e-280c-4935-9389-4e5a0c6719b4">
+    </UnitTestResult>
+    <UnitTestResult executionId="c4ca6a31-b39f-4ce7-9905-535f37510da8" testId="e936e606-993c-fa42-c77c-842e36450f9b" testName="getNetValueTest" computerName="WGC-PC" duration="00:00:00.1533714" startTime="2014-06-15T22:18:40.1366491+08:00" endTime="2014-06-15T22:18:40.3082494+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c4ca6a31-b39f-4ce7-9905-535f37510da8">
+    </UnitTestResult>
+    <UnitTestResult executionId="f5d98eb1-eab0-4e73-a955-99ab52cac838" testId="1ec3b225-95d9-634f-ffd5-374d80bbec37" testName="WebServiceConstructorTest" computerName="WGC-PC" duration="00:00:00.0003049" startTime="2014-06-15T22:18:40.3082494+08:00" endTime="2014-06-15T22:18:40.3238494+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f5d98eb1-eab0-4e73-a955-99ab52cac838">
+    </UnitTestResult>
+  </Results>
+</TestRun>

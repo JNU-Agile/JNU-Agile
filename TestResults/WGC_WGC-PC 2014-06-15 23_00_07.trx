@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="572a2f0e-518f-4c17-b1b7-5526ea6e5ad6" name="WGC@WGC-PC 2014-06-15 23:00:07" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 23_00_07">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T23:00:07.9401827+08:00" queuing="2014-06-15T23:00:08.0391883+08:00" start="2014-06-15T23:00:08.0531891+08:00" finish="2014-06-15T23:00:12.9065995+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="61a08474-65fa-3b74-dff9-0a6abfc821e2">
+      <Execution id="e8b5abee-711a-4169-99ae-da48cd894178" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.FilterUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" executionId="e8b5abee-711a-4169-99ae-da48cd894178" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e8b5abee-711a-4169-99ae-da48cd894178" testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:04.4970391" startTime="2014-06-15T23:00:08.0621896+08:00" endTime="2014-06-15T23:00:12.8753994+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e8b5abee-711a-4169-99ae-da48cd894178">
+      <Output>
+        <DebugTrace>W, 6096, 72, 2014/06/15, 23:00:10.597, 102683873116, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 6096, 72, 2014/06/15, 23:00:10.940, 102684666827, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] SetValueAsComboBox "货币型" - "[MSAA, VisibleOnly]ControlType='ComboBox' &amp;&amp; Name='类型过滤'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 6096, 72, 2014/06/15, 23:00:11.674, 102686395895, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='过滤'"
+\0&lt;/a&gt;
+E, 6096, 72, 2014/06/15, 23:00:11.954, 102687039013, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 72, 2014/06/15, 23:00:12.079, 102687343036, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+E, 6096, 72, 2014/06/15, 23:00:12.407, 102688124708, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 72, 2014/06/15, 23:00:12.578, 102688499322, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 72, 2014/06/15, 23:00:12.859, 102689177801, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 72, 2014/06/15, 23:00:12.859, 102689178131, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

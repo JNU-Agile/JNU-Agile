@@ -1,0 +1,293 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="22baeddd-36b5-4538-867f-469882659a9a" name="WGC@WGC-PC 2014-06-15 23:00:29" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 23_00_29">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T23:00:29.8978442+08:00" queuing="2014-06-15T23:00:29.9290442+08:00" start="2014-06-15T23:00:29.9602443+08:00" finish="2014-06-15T23:01:20.8319336+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="13" executed="13" passed="13" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetWebContentTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="965bf3b5-3bfd-63f8-aa9b-560034172765">
+      <Execution id="da1060d1-adf5-48dc-a08d-45292a3c23a6" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetWebContentTest" />
+    </UnitTest>
+    <UnitTest name="SearchConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="cc5983e7-1cc9-4dd9-964b-d9c5cd92957b" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SearchConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByNameTest1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="3d4fa690-dcaf-92a2-a8e4-a3689e99e105">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="885d6b56-c321-445c-b6d7-657315bb6e73" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByNameTest1" />
+    </UnitTest>
+    <UnitTest name="getNetValueTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="e936e606-993c-fa42-c77c-842e36450f9b">
+      <Execution id="204191f0-b68c-4469-ad84-b0ead53f1dc2" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="getNetValueTest" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByCodeTest2" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="a77bd008-9d31-9564-922a-8dedfa4d9ef5">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="09472ee7-8b2e-46fd-b246-7a1742ac6e1e" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByCodeTest2" />
+    </UnitTest>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="61a08474-65fa-3b74-dff9-0a6abfc821e2">
+      <Execution id="c5e71616-2493-40ab-98e2-e7d300e8d93f" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.FilterUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="GetAllFundTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="9d256cf2-7769-314c-12d8-ead0c255911e">
+      <Execution id="93de70ba-cb34-4702-932c-6cce5043a290" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetAllFundTest" />
+    </UnitTest>
+    <UnitTest name="NetValueOfFundConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1">
+      <Execution id="43aec601-a35e-4aec-99bd-dd7431b1972f" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.NetValueOfFundTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NetValueOfFundConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByNameTest2" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="1088fdeb-28ef-0752-3498-b93f358b8a4b">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="54d5f6b0-a10e-46a2-a44d-42d0508bb74e" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByNameTest2" />
+    </UnitTest>
+    <UnitTest name="comparTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="59befb75-8606-3b35-bbd5-fc7999d32f1e">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="bbd59cee-e659-49ff-a6c9-7401136195b8" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="comparTest" />
+    </UnitTest>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="799c1460-eae4-8a34-62a4-f11efd7f1500">
+      <Execution id="48976d06-fbb9-48c7-b5a5-462af3d06f15" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.ChartUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="WebServiceConstructorTest" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="1ec3b225-95d9-634f-ffd5-374d80bbec37">
+      <Execution id="9376ea40-68a0-4cda-a9ee-23f3ab07372d" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.WebServiceTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="WebServiceConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Search_SearchByCodeTest1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="885226bb-3bc1-c27b-1bfe-9c217144577b">
+      <DeploymentItems>
+        <DeploymentItem filename="FundHelper.exe" />
+      </DeploymentItems>
+      <Execution id="aa240b34-6b00-44c4-9261-59fa746d84c8" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchTest, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Search_SearchByCodeTest1" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="e936e606-993c-fa42-c77c-842e36450f9b" executionId="204191f0-b68c-4469-ad84-b0ead53f1dc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9d256cf2-7769-314c-12d8-ead0c255911e" executionId="93de70ba-cb34-4702-932c-6cce5043a290" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="965bf3b5-3bfd-63f8-aa9b-560034172765" executionId="da1060d1-adf5-48dc-a08d-45292a3c23a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" executionId="cc5983e7-1cc9-4dd9-964b-d9c5cd92957b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="799c1460-eae4-8a34-62a4-f11efd7f1500" executionId="48976d06-fbb9-48c7-b5a5-462af3d06f15" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ec3b225-95d9-634f-ffd5-374d80bbec37" executionId="9376ea40-68a0-4cda-a9ee-23f3ab07372d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1088fdeb-28ef-0752-3498-b93f358b8a4b" executionId="54d5f6b0-a10e-46a2-a44d-42d0508bb74e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a77bd008-9d31-9564-922a-8dedfa4d9ef5" executionId="09472ee7-8b2e-46fd-b246-7a1742ac6e1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" executionId="43aec601-a35e-4aec-99bd-dd7431b1972f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" executionId="c5e71616-2493-40ab-98e2-e7d300e8d93f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="885226bb-3bc1-c27b-1bfe-9c217144577b" executionId="aa240b34-6b00-44c4-9261-59fa746d84c8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d4fa690-dcaf-92a2-a8e4-a3689e99e105" executionId="885d6b56-c321-445c-b6d7-657315bb6e73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59befb75-8606-3b35-bbd5-fc7999d32f1e" executionId="bbd59cee-e659-49ff-a6c9-7401136195b8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="204191f0-b68c-4469-ad84-b0ead53f1dc2" testId="e936e606-993c-fa42-c77c-842e36450f9b" testName="getNetValueTest" computerName="WGC-PC" duration="00:00:00.3021965" startTime="2014-06-15T23:00:29.9602443+08:00" endTime="2014-06-15T23:00:30.5062452+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="204191f0-b68c-4469-ad84-b0ead53f1dc2">
+    </UnitTestResult>
+    <UnitTestResult executionId="93de70ba-cb34-4702-932c-6cce5043a290" testId="9d256cf2-7769-314c-12d8-ead0c255911e" testName="GetAllFundTest" computerName="WGC-PC" duration="00:00:00.4935901" startTime="2014-06-15T23:00:30.5062452+08:00" endTime="2014-06-15T23:00:31.0210461+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93de70ba-cb34-4702-932c-6cce5043a290">
+    </UnitTestResult>
+    <UnitTestResult executionId="da1060d1-adf5-48dc-a08d-45292a3c23a6" testId="965bf3b5-3bfd-63f8-aa9b-560034172765" testName="GetWebContentTest" computerName="WGC-PC" duration="00:00:00.4038067" startTime="2014-06-15T23:00:31.0210461+08:00" endTime="2014-06-15T23:00:31.4266469+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="da1060d1-adf5-48dc-a08d-45292a3c23a6">
+    </UnitTestResult>
+    <UnitTestResult executionId="cc5983e7-1cc9-4dd9-964b-d9c5cd92957b" testId="f7f9dc8c-40f9-afe4-bc02-c96992e7d34f" testName="SearchConstructorTest" computerName="WGC-PC" duration="00:00:00.0066067" startTime="2014-06-15T23:00:31.4266469+08:00" endTime="2014-06-15T23:00:31.4422469+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc5983e7-1cc9-4dd9-964b-d9c5cd92957b">
+    </UnitTestResult>
+    <UnitTestResult executionId="48976d06-fbb9-48c7-b5a5-462af3d06f15" testId="799c1460-eae4-8a34-62a4-f11efd7f1500" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:11.7185894" startTime="2014-06-15T23:00:31.4578469+08:00" endTime="2014-06-15T23:00:43.2202676+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="48976d06-fbb9-48c7-b5a5-462af3d06f15">
+      <Output>
+        <DebugTrace>E, 6096, 93, 2014/06/15, 23:00:32.019, 102733957737, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 93, 2014/06/15, 23:00:32.128, 102734223989, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 93, 2014/06/15, 23:00:33.423, 102737240511, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Cell' &amp;&amp; Value='YFDTTLCHBA'"
+\0&lt;/a&gt;
+E, 6096, 93, 2014/06/15, 23:00:33.610, 102737687051, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 93, 2014/06/15, 23:00:33.719, 102737941970, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 93, 2014/06/15, 23:00:34.687, 102740191732, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] DoubleClick - "[MSAA, VisibleOnly]ControlType='Cell' &amp;&amp; Value='YFDTTLCHBA'"  &lt; Mouse cursor location (416, 246) &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:35.123, 102741224154, QTAgent32.exe, Msaa.MsaaElement() took more time. Total time taken 331 ms for element 12649360
+W, 6096, 93, 2014/06/15, 23:00:35.997, 102743257441, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='图形'"
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:36.590, 102744665094, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:36.839, 102745227710, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] StartDragging - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Mouse cursor location (523, 503) &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:36.980, 102745579261, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:39.382, 102751175296, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] StopDragging  &lt; Mouse cursor location (664, 536) &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:39.663, 102751856810, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:39.991, 102752626430, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] StartDragging - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; Mouse cursor location (650, 570) &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:40.583, 102754007481, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; EnsureVisible via Scrolling &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:40.802, 102754494658, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] StopDragging  &lt; Mouse cursor location (649, 566) &gt;
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:41.285, 102755622800, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:41.909, 102757082925, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='列表'"
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:42.393, 102758219905, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='图形'"
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:43.095, 102759879501, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='返回'"
+\0&lt;/a&gt;
+W, 6096, 93, 2014/06/15, 23:00:43.204, 102760141206, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 93, 2014/06/15, 23:00:43.204, 102760141570, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9376ea40-68a0-4cda-a9ee-23f3ab07372d" testId="1ec3b225-95d9-634f-ffd5-374d80bbec37" testName="WebServiceConstructorTest" computerName="WGC-PC" duration="00:00:00.0048234" startTime="2014-06-15T23:00:43.2358676+08:00" endTime="2014-06-15T23:00:43.2358676+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9376ea40-68a0-4cda-a9ee-23f3ab07372d">
+    </UnitTestResult>
+    <UnitTestResult executionId="54d5f6b0-a10e-46a2-a44d-42d0508bb74e" testId="1088fdeb-28ef-0752-3498-b93f358b8a4b" testName="Search_SearchByNameTest2" computerName="WGC-PC" duration="00:00:07.1569611" startTime="2014-06-15T23:00:43.2514676+08:00" endTime="2014-06-15T23:00:50.4118802+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="54d5f6b0-a10e-46a2-a44d-42d0508bb74e">
+      <Output>
+        <StdOut>1169 0 2338
+584 0 1168
+876 585 1168
+730 585 875
+803 731 875
+839 804 875
+821 804 838
+830 822 838
+825 822 829
+827 826 829
+828 828 829
+829 829 829
+1169 0 2338
+584 0 1168
+291 0 583
+145 0 290
+72 0 144
+35 0 71
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="09472ee7-8b2e-46fd-b246-7a1742ac6e1e" testId="a77bd008-9d31-9564-922a-8dedfa4d9ef5" testName="Search_SearchByCodeTest2" computerName="WGC-PC" duration="00:00:07.8445176" startTime="2014-06-15T23:00:50.4118802+08:00" endTime="2014-06-15T23:00:58.2586940+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="09472ee7-8b2e-46fd-b246-7a1742ac6e1e">
+      <Output>
+        <StdOut>1169 0 2338
+584 0 1168
+291 0 583
+145 0 290
+72 0 144
+35 0 71
+17 0 34
+8 0 16
+3 0 7
+1 0 2</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="43aec601-a35e-4aec-99bd-dd7431b1972f" testId="b4b20bb2-aa8b-03bc-76c4-024a1ba5e4e1" testName="NetValueOfFundConstructorTest" computerName="WGC-PC" duration="00:00:00.0004917" startTime="2014-06-15T23:00:58.2742940+08:00" endTime="2014-06-15T23:00:58.2742940+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="43aec601-a35e-4aec-99bd-dd7431b1972f">
+    </UnitTestResult>
+    <UnitTestResult executionId="c5e71616-2493-40ab-98e2-e7d300e8d93f" testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:04.1041213" startTime="2014-06-15T23:00:58.2742940+08:00" endTime="2014-06-15T23:01:02.3927012+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c5e71616-2493-40ab-98e2-e7d300e8d93f">
+      <Output>
+        <DebugTrace>W, 6096, 95, 2014/06/15, 23:01:00.037, 102799482226, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 6096, 95, 2014/06/15, 23:01:00.380, 102800290337, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] SetValueAsComboBox "货币型" - "[MSAA, VisibleOnly]ControlType='ComboBox' &amp;&amp; Name='类型过滤'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:01:01.082, 102801921736, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='过滤'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:01:01.331, 102802510859, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:01:01.534, 102802969267, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+E, 6096, 95, 2014/06/15, 23:01:02.018, 102804134147, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:01:02.111, 102804336566, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 95, 2014/06/15, 23:01:02.377, 102804971652, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 95, 2014/06/15, 23:01:02.377, 102804971947, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="aa240b34-6b00-44c4-9261-59fa746d84c8" testId="885226bb-3bc1-c27b-1bfe-9c217144577b" testName="Search_SearchByCodeTest1" computerName="WGC-PC" duration="00:00:08.0147155" startTime="2014-06-15T23:01:02.3927012+08:00" endTime="2014-06-15T23:01:10.4111153+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa240b34-6b00-44c4-9261-59fa746d84c8">
+      <Output>
+        <StdOut>1169 0 2338
+584 0 1168
+291 0 583
+145 0 290
+72 0 144
+35 0 71
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="885d6b56-c321-445c-b6d7-657315bb6e73" testId="3d4fa690-dcaf-92a2-a8e4-a3689e99e105" testName="Search_SearchByNameTest1" computerName="WGC-PC" duration="00:00:10.3141062" startTime="2014-06-15T23:01:10.4267154+08:00" endTime="2014-06-15T23:01:20.7383335+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="885d6b56-c321-445c-b6d7-657315bb6e73">
+      <Output>
+        <StdOut>1169 0 2338
+584 0 1168
+876 585 1168
+730 585 875
+803 731 875
+839 804 875
+821 804 838
+830 822 838
+825 822 829
+827 826 829
+828 828 829
+829 829 829
+1169 0 2338
+584 0 1168
+291 0 583
+145 0 290
+72 0 144
+35 0 71
+17 0 34
+8 0 16
+3 0 7
+1 0 2
+0 0 0</StdOut>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bbd59cee-e659-49ff-a6c9-7401136195b8" testId="59befb75-8606-3b35-bbd5-fc7999d32f1e" testName="comparTest" computerName="WGC-PC" duration="00:00:00.0006658" startTime="2014-06-15T23:01:20.7383335+08:00" endTime="2014-06-15T23:01:20.7539335+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bbd59cee-e659-49ff-a6c9-7401136195b8">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -66,3 +66,11 @@ C:\Users\Administrator\Desktop\agile5\obj\x86\Debug\FundHelper.csprojResolveAsse
 C:\Users\Administrator\Desktop\agile5\obj\x86\Debug\FundHelper.Main.resources
 C:\Users\Administrator\Desktop\agile5\obj\x86\Debug\FundHelper.Properties.Resources.resources
 C:\Users\Administrator\Desktop\agile5\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache
+D:\git_file\agile6\obj\x86\Debug\FundHelper.exe
+D:\git_file\agile6\obj\x86\Debug\FundHelper.pdb
+D:\git_file\agile6\bin\Debug\FundHelper.exe
+D:\git_file\agile6\bin\Debug\FundHelper.pdb
+D:\git_file\agile6\obj\x86\Debug\FundHelper.csprojResolveAssemblyReference.cache
+D:\git_file\agile6\obj\x86\Debug\FundHelper.Main.resources
+D:\git_file\agile6\obj\x86\Debug\FundHelper.Properties.Resources.resources
+D:\git_file\agile6\obj\x86\Debug\FundHelper.csproj.GenerateResource.Cache

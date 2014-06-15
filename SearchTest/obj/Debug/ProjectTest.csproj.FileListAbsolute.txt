@@ -18,3 +18,13 @@ D:\git_file\agile5\SearchTest\bin\Debug\FundHelper_Accessor.pdb
 D:\git_file\agile5\SearchTest\obj\Debug\ResolveAssemblyReference.cache
 D:\git_file\agile5\SearchTest\obj\Debug\SearchTest.dll
 D:\git_file\agile5\SearchTest\obj\Debug\SearchTest.pdb
+D:\git_file\agile6\SearchTest\bin\Debug\SearchTest.dll
+D:\git_file\agile6\SearchTest\bin\Debug\SearchTest.pdb
+D:\git_file\agile6\SearchTest\bin\Debug\FundHelper.exe
+D:\git_file\agile6\SearchTest\bin\Debug\Newtonsoft.Json.dll
+D:\git_file\agile6\SearchTest\bin\Debug\FundHelper.pdb
+D:\git_file\agile6\SearchTest\bin\Debug\FundHelper_Accessor.exe
+D:\git_file\agile6\SearchTest\bin\Debug\FundHelper_Accessor.pdb
+D:\git_file\agile6\SearchTest\obj\Debug\ProjectTest.csprojResolveAssemblyReference.cache
+D:\git_file\agile6\SearchTest\obj\Debug\SearchTest.dll
+D:\git_file\agile6\SearchTest\obj\Debug\SearchTest.pdb

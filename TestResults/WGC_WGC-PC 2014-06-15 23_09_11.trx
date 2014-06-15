@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="c5fd7594-06fd-4535-a8fb-52fdc1cc7ec6" name="WGC@WGC-PC 2014-06-15 23:09:11" runUser="WGC-PC\WGC" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="本地" id="ffe8e615-da9b-4382-b315-9270326db308">
+    <Description>这些设置为本地测试运行的默认测试设置。</Description>
+    <Deployment enabled="false" runDeploymentRoot="WGC_WGC-PC 2014-06-15 23_09_11">
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="D:\git_file\agile6\bin\Debug\FundHelper.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2014-06-15T23:09:11.5801807+08:00" queuing="2014-06-15T23:09:11.6113808+08:00" start="2014-06-15T23:09:11.6269808+08:00" finish="2014-06-15T23:09:52.3668684+08:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="7cd4b4e3-bb40-3ddd-9b26-5c48b3dafd3c">
+      <Execution id="5fc2aaef-b3d8-46c7-8306-89cf9dbe90ec" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.SearchUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="799c1460-eae4-8a34-62a4-f11efd7f1500">
+      <Execution id="672b415f-fb32-4fad-bcc8-1ab84b57629d" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.ChartUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+    <UnitTest name="CodedUITestMethod1" storage="d:\git_file\agile6\searchtest\bin\debug\searchtest.dll" id="61a08474-65fa-3b74-dff9-0a6abfc821e2">
+      <Execution id="4c788381-65f8-4384-9b00-f64cb47ca186" />
+      <TestMethod codeBase="D:/git_file/agile6/SearchTest/bin/Debug/SearchTest.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="SearchTest.FilterUITest1, SearchTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="CodedUITestMethod1" />
+      <Extension>Microsoft.VisualStudio.TestTools.UITesting.CodedUITestAttribute, Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Extension>
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="799c1460-eae4-8a34-62a4-f11efd7f1500" executionId="672b415f-fb32-4fad-bcc8-1ab84b57629d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" executionId="4c788381-65f8-4384-9b00-f64cb47ca186" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7cd4b4e3-bb40-3ddd-9b26-5c48b3dafd3c" executionId="5fc2aaef-b3d8-46c7-8306-89cf9dbe90ec" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="672b415f-fb32-4fad-bcc8-1ab84b57629d" testId="799c1460-eae4-8a34-62a4-f11efd7f1500" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:25.5003324" startTime="2014-06-15T23:09:11.6581809+08:00" endTime="2014-06-15T23:09:37.4450262+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="672b415f-fb32-4fad-bcc8-1ab84b57629d">
+      <Output>
+        <DebugTrace>E, 6096, 92, 2014/06/15, 23:09:12.484, 103950972029, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 92, 2014/06/15, 23:09:12.594, 103951237699, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 92, 2014/06/15, 23:09:27.476, 103986013471, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Cell' &amp;&amp; Value='YFDTTLCHBA'"
+\0&lt;/a&gt;
+E, 6096, 92, 2014/06/15, 23:09:27.710, 103986568494, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 92, 2014/06/15, 23:09:27.835, 103986870901, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 92, 2014/06/15, 23:09:28.677, 103988819720, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] DoubleClick - "[MSAA, VisibleOnly]ControlType='Cell' &amp;&amp; Value='YFDTTLCHBA'"  &lt; Mouse cursor location (567, 255) &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:29.364, 103990456485, QTAgent32.exe, Msaa.MsaaElement() took more time. Total time taken 589 ms for element 12649360
+W, 6096, 92, 2014/06/15, 23:09:30.300, 103992614492, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='图形'"
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:30.861, 103993961249, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:31.095, 103994485487, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] StartDragging - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Mouse cursor location (696, 512) &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:31.236, 103994830998, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='X axis 主要网格线' &amp;&amp; ControlType='Image'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:33.669, 104000496570, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] StopDragging  &lt; Mouse cursor location (837, 545) &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:33.935, 104001119159, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; Element is clickable &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:34.215, 104001772807, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] StartDragging - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; Mouse cursor location (801, 579) &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:34.761, 104003078718, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] EnsureVisible - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"  &lt; EnsureVisible via Scrolling &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:35.027, 104003669830, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] StopDragging  &lt; Mouse cursor location (800, 573) &gt;
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:35.510, 104004798043, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]Name='chart1' &amp;&amp; ControlType='Chart'"
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:36.119, 104006250829, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='列表'"
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:36.587, 104007347754, QTAgent32.exe, &lt;a class=success&gt;Playback - {14} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='图形'"
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:37.289, 104008956695, QTAgent32.exe, &lt;a class=success&gt;Playback - {15} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='返回'"
+\0&lt;/a&gt;
+W, 6096, 92, 2014/06/15, 23:09:37.429, 104009292944, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 92, 2014/06/15, 23:09:37.429, 104009293312, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c788381-65f8-4384-9b00-f64cb47ca186" testId="61a08474-65fa-3b74-dff9-0a6abfc821e2" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:04.7071698" startTime="2014-06-15T23:09:37.4606262+08:00" endTime="2014-06-15T23:09:42.1800505+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c788381-65f8-4384-9b00-f64cb47ca186">
+      <Output>
+        <DebugTrace>W, 6096, 72, 2014/06/15, 23:09:39.933, 104015151100, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 6096, 72, 2014/06/15, 23:09:40.276, 104015963472, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] SetValueAsComboBox "货币型" - "[MSAA, VisibleOnly]ControlType='ComboBox' &amp;&amp; Name='类型过滤'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 6096, 72, 2014/06/15, 23:09:40.947, 104017519183, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='过滤'"
+\0&lt;/a&gt;
+E, 6096, 72, 2014/06/15, 23:09:41.197, 104018106333, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 72, 2014/06/15, 23:09:41.400, 104018579448, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+E, 6096, 72, 2014/06/15, 23:09:41.790, 104019495001, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 72, 2014/06/15, 23:09:41.899, 104019749169, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 72, 2014/06/15, 23:09:42.164, 104020389662, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 72, 2014/06/15, 23:09:42.164, 104020389948, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5fc2aaef-b3d8-46c7-8306-89cf9dbe90ec" testId="7cd4b4e3-bb40-3ddd-9b26-5c48b3dafd3c" testName="CodedUITestMethod1" computerName="WGC-PC" duration="00:00:10.1168461" startTime="2014-06-15T23:09:42.1800505+08:00" endTime="2014-06-15T23:09:52.3044683+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5fc2aaef-b3d8-46c7-8306-89cf9dbe90ec">
+      <Output>
+        <DebugTrace>W, 6096, 95, 2014/06/15, 23:09:42.320, 104020720798, QTAgent32.exe, Value in en-US resource '最大化' does not match the defaultvalue 'Maximize'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020721670, QTAgent32.exe, Value in en-US resource '还原' does not match the defaultvalue 'Restore'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020739842, QTAgent32.exe, Value in en-US resource '返回' does not match the defaultvalue 'Back'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020740454, QTAgent32.exe, Value in en-US resource '前进' does not match the defaultvalue 'Forward'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020740971, QTAgent32.exe, Value in en-US resource '刷新 (F5)' does not match the defaultvalue 'Refresh (F5)'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020741472, QTAgent32.exe, Value in en-US resource '停止 (Esc)' does not match the defaultvalue 'Stop (Esc)'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020742348, QTAgent32.exe, Value in en-US resource '显示地址栏自动完成' does not match the defaultvalue 'Show Address Bar Autocomplete'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020752860, QTAgent32.exe, Value in en-US resource 'Microsoft SmartScreen 筛选器' does not match the defaultvalue 'Microsoft Phishing Filter'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020753424, QTAgent32.exe, Value in en-US resource '自动完成' does not match the defaultvalue 'AutoComplete'
+W, 6096, 95, 2014/06/15, 23:09:42.320, 104020753933, QTAgent32.exe, Value in en-US resource '自动完成密码' does not match the defaultvalue 'AutoComplete Passwords'
+E, 6096, 95, 2014/06/15, 23:09:42.320, 104020754744, QTAgent32.exe, LoadLibrary() : Unable to find the resource 37382 from assembly C:\Windows\system32\zh-CN\ieframe.dll.mui: Error1814
+E, 6096, 95, 2014/06/15, 23:09:42.336, 104020756212, QTAgent32.exe, LoadLibrary() : Unable to find the resource 41728 from assembly C:\Windows\system32\zh-CN\ieframe.dll.mui: Error1814
+E, 6096, 95, 2014/06/15, 23:09:42.336, 104020756729, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\zh-CN\ieframe.dll.mui: Error1814
+E, 6096, 95, 2014/06/15, 23:09:42.336, 104020757229, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\zh-CN\ieframe.dll.mui: Error1814
+W, 6096, 95, 2014/06/15, 23:09:42.336, 104020757764, QTAgent32.exe, Value in en-US resource '关闭' does not match the defaultvalue 'Close'
+E, 6096, 95, 2014/06/15, 23:09:42.336, 104020758226, QTAgent32.exe, LoadLibrary() : Unable to find the resource 8131 from assembly C:\Windows\system32\zh-CN\ieframe.dll.mui: Error1814
+W, 6096, 95, 2014/06/15, 23:09:42.336, 104020758761, QTAgent32.exe, Value in en-US resource '安全警告' does not match the defaultvalue 'Security Warning'
+E, 6096, 95, 2014/06/15, 23:09:42.336, 104020759413, QTAgent32.exe, LoadLibrary() : Unable to find the resource 803 from assembly C:\Windows\system32\zh-CN\user32.dll.mui: Error1814
+W, 6096, 95, 2014/06/15, 23:09:42.336, 104020760746, QTAgent32.exe, Value in en-US resource 'Windows 安全' does not match the defaultvalue 'Windows Security'
+W, 6096, 95, 2014/06/15, 23:09:42.897, 104022070474, QTAgent32.exe, &lt;a class=success&gt;Playback - {1} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:42.897, 104022079339, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 6096, 95, 2014/06/15, 23:09:43.038, 104022398882, QTAgent32.exe, &lt;a class=success&gt;Playback - {2} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:43.038, 104022399737, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 6096, 95, 2014/06/15, 23:09:43.116, 104022582413, QTAgent32.exe, &lt;a class=success&gt;Playback - {3} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:43.521, 104023536980, QTAgent32.exe, &lt;a class=success&gt;Playback - {4} [SUCCESS] SetValueAsEditBox "000122" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:44.644, 104026162189, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 6096, 95, 2014/06/15, 23:09:44.988, 104026978570, QTAgent32.exe, &lt;a class=success&gt;Playback - {5} [SUCCESS] SetValueAsComboBox "代码" - "[MSAA, VisibleOnly]ControlType='ComboBox'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:45.612, 104028417644, QTAgent32.exe, &lt;a class=success&gt;Playback - {6} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='搜索'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:45.892, 104029100326, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:09:46.033, 104029428000, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+E, 6096, 95, 2014/06/15, 23:09:46.813, 104031237184, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:09:46.906, 104031452400, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 95, 2014/06/15, 23:09:47.874, 104033706868, QTAgent32.exe, &lt;a class=success&gt;Playback - {7} [SUCCESS] SendKeys "^{HOME}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:47.874, 104033707571, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 6096, 95, 2014/06/15, 23:09:48.045, 104034107888, QTAgent32.exe, &lt;a class=success&gt;Playback - {8} [SUCCESS] SendKeys "^+{END}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:48.045, 104034108563, QTAgent32.exe, Msaa.GetFocusedElement: could not find accessible object of foreground window
+W, 6096, 95, 2014/06/15, 23:09:48.123, 104034291026, QTAgent32.exe, &lt;a class=success&gt;Playback - {9} [SUCCESS] SendKeys "{DELETE}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:48.513, 104035205905, QTAgent32.exe, &lt;a class=success&gt;Playback - {10} [SUCCESS] SetValueAsEditBox "南方中票A" - "[MSAA, VisibleOnly]ControlType='Edit'"  &lt; Set via SendKeys &gt;
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:48.872, 104036041383, QTAgent32.exe, &lt;a class=success&gt;Playback - {11} [SUCCESS] SendKeys "{CapsLock}" - "[MSAA, VisibleOnly]ControlType='Edit'"
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:49.948, 104038583972, QTAgent32.exe, Playback - [WARNING] Internal warning: Incorrect flag set for InvokeProgrammaticAction\0
+W, 6096, 95, 2014/06/15, 23:09:50.307, 104039417605, QTAgent32.exe, &lt;a class=success&gt;Playback - {12} [SUCCESS] SetValueAsComboBox "全称" - "[MSAA, VisibleOnly]ControlType='ComboBox'"  &lt; SetValueAsComboBox, set by clicking on the item in the list box &gt;
+\0&lt;/a&gt;
+W, 6096, 95, 2014/06/15, 23:09:50.760, 104040487544, QTAgent32.exe, &lt;a class=success&gt;Playback - {13} [SUCCESS] MouseButtonClick - "[MSAA, VisibleOnly]ControlType='Button' &amp;&amp; Name='搜索'"
+\0&lt;/a&gt;
+E, 6096, 95, 2014/06/15, 23:09:51.009, 104041065343, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:09:51.212, 104041535100, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+E, 6096, 95, 2014/06/15, 23:09:51.867, 104043060715, QTAgent32.exe, Exception: System.NotSupportedException
+	Message: 不支持所指定的方法。
+	Stack Trace:    在 Microsoft.VisualStudio.TestTools.UITest.Extension.Msaa.MsaaElement.GetPropertyValue(String propertyName)
+   在 Microsoft.VisualStudio.TestTools.UITest.Extension.PropertyCondition.Match(IUITechnologyElement element)
+	BaseExceptionMessage: 不支持所指定的方法。
+
+W, 6096, 95, 2014/06/15, 23:09:51.976, 104043335138, QTAgent32.exe, Playback - [WARNING] Internal warning: Could not obtain technology manager for given id in GetTechnologyManagerById.
+\0
+W, 6096, 95, 2014/06/15, 23:09:52.304, 104044084542, QTAgent32.exe, IEDOM : StopSession of the plugin called before StartSession
+W, 6096, 95, 2014/06/15, 23:09:52.304, 104044084832, QTAgent32.exe, UIA : StopSession of the plugin called before StartSession
+</DebugTrace>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

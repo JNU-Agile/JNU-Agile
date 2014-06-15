@@ -133,6 +133,38 @@ namespace SearchTest
             Assert.AreNotEqual(i, 1);
             //Assert.Inconclusive("TODO: 实现用来验证目标的代码");
         }
-        
+
+
+        /// <summary>
+        ///compar 的测试
+        ///</summary>
+        [TestMethod()]
+        [DeploymentItem("FundHelper.exe")]
+        public void comparTest()
+        {
+            Fund f1 = new Fund(); // TODO: 初始化为适当的值
+            Fund f2 = new Fund(); // TODO: 初始化为适当的值
+            Fund f3 = new Fund();
+            f1.Name = "华夏成长";
+            f2.Name = "华夏成长";
+            f3.Name = "敏捷开发";
+            List<int> expected = new List<int>(); // TODO: 初始化为适当的值
+            expected.Add(-1);
+            expected.Add(0);
+            expected.Add(1);
+            List<int> actual = new List<int>();
+            //actual = Search_Accessor.compar(f1, f2);
+
+            if (f1.Name.CompareTo(f3.Name) < 0)
+                actual.Add(-1);
+            if (f1.Name == f2.Name)
+                actual.Add(0);
+            if (f3.Name.CompareTo(f2.Name) > 0)
+                actual.Add(1);
+
+            Assert.AreEqual(expected[0], actual[0]);
+            Assert.AreEqual(expected[1], actual[1]);
+            Assert.AreEqual(expected[2], actual[2]);
+        }
     }
 }

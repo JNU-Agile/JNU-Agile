@@ -13,12 +13,12 @@ using Keyboard = Microsoft.VisualStudio.TestTools.UITesting.Keyboard;
 namespace SearchTest
 {
     /// <summary>
-    /// ChartUITest1 的摘要说明
+    /// FilterUITest1 的摘要说明
     /// </summary>
     [CodedUITest]
-    public class ChartUITest1
+    public class FilterUITest1
     {
-        public ChartUITest1()
+        public FilterUITest1()
         {
         }
 
@@ -27,8 +27,8 @@ namespace SearchTest
         {
             // 若要为此测试生成代码，请从快捷菜单中选择“为编码的 UI 测试生成代码”，然后选择菜单项之一。
             // 有关生成的代码的详细信息，请参见 http://go.microsoft.com/fwlink/?LinkId=179463
-            this.UIMap.RecordedMethod1();
-            this.UIMap.AssertMethod1();
+            this.UIMap.RecordedMethod3();
+            this.UIMap.AssertMethod2();
         }
 
         #region 附加测试特性

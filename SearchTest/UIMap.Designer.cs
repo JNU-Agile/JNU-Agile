@@ -86,6 +86,196 @@ namespace SearchTest
             Assert.AreEqual(this.AssertMethod1ExpectedValues.UIChart1ChartExists, uIChart1Chart.Exists);
         }
         
+        /// <summary>
+        /// RecordedMethod2 - 使用“RecordedMethod2Params”将参数传递到此方法中。
+        /// </summary>
+        public void RecordedMethod2()
+        {
+            #region Variable Declarations
+            WinComboBox uI类型过滤ComboBox = this.UIFundHelperWindow.UIComboBox2Window.UI类型过滤ComboBox;
+            WinButton uI过滤Button = this.UIFundHelperWindow.UI过滤Window.UI过滤Button;
+            #endregion
+
+            // 在 “类型过滤” 组合框 中选择“货币型”
+            uI类型过滤ComboBox.SelectedItem = this.RecordedMethod2Params.UI类型过滤ComboBoxSelectedItem;
+
+            // 单击 “过滤” 按钮
+            Mouse.Click(uI过滤Button, new Point(61, 10));
+        }
+        
+        /// <summary>
+        /// RecordedMethod3 - 使用“RecordedMethod3Params”将参数传递到此方法中。
+        /// </summary>
+        public void RecordedMethod3()
+        {
+            #region Variable Declarations
+            WinComboBox uI类型过滤ComboBox = this.UIFundHelperWindow.UIComboBox2Window.UI类型过滤ComboBox;
+            WinButton uI过滤Button = this.UIFundHelperWindow.UI过滤Window.UI过滤Button;
+            #endregion
+
+            // 在 “类型过滤” 组合框 中选择“货币型”
+            uI类型过滤ComboBox.SelectedItem = this.RecordedMethod3Params.UI类型过滤ComboBoxSelectedItem;
+
+            // 单击 “过滤” 按钮
+            Mouse.Click(uI过滤Button, new Point(52, 8));
+        }
+        
+        /// <summary>
+        /// AssertMethod2 - 使用“AssertMethod2ExpectedValues”将参数传递到此方法中。
+        /// </summary>
+        public void AssertMethod2()
+        {
+            #region Variable Declarations
+            WinCell uI货币型Cell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行6Row1.UI货币型Cell;
+            #endregion
+
+            // 确认 “货币型” 单元格 的属性“Exists”等于“True”
+            Assert.AreEqual(this.AssertMethod2ExpectedValues.UI货币型CellExists, uI货币型Cell.Exists);
+        }
+        
+        /// <summary>
+        /// RecordedMethod4 - 使用“RecordedMethod4Params”将参数传递到此方法中。
+        /// </summary>
+        public void RecordedMethod4()
+        {
+            #region Variable Declarations
+            WinEdit uITextBox1Edit = this.UIFundHelperWindow.UITextBox1Window.UITextBox1Edit;
+            WinComboBox uIComboBox1ComboBox = this.UIFundHelperWindow.UIComboBox1Window.UIComboBox1ComboBox;
+            WinButton uI搜索Button = this.UIFundHelperWindow.UI搜索Window.UI搜索Button;
+            #endregion
+
+            // 在 “textBox1” 文本框 中键入“000122”
+            uITextBox1Edit.Text = this.RecordedMethod4Params.UITextBox1EditText;
+
+            // 在 “comboBox1” 组合框 中选择“代码”
+            uIComboBox1ComboBox.SelectedItem = this.RecordedMethod4Params.UIComboBox1ComboBoxSelectedItem;
+
+            // 单击 “搜索” 按钮
+            Mouse.Click(uI搜索Button, new Point(29, 10));
+        }
+        
+        /// <summary>
+        /// AssertMethod3 - 使用“AssertMethod3ExpectedValues”将参数传递到此方法中。
+        /// </summary>
+        public void AssertMethod3()
+        {
+            #region Variable Declarations
+            WinCell uI汇添富实业债债券ACell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行100Row.UI汇添富实业债债券ACell;
+            #endregion
+
+            // 确认 “汇添富实业债债券A” 单元格 的属性“Exists”等于“True”
+            Assert.AreEqual(this.AssertMethod3ExpectedValues.UI汇添富实业债债券ACellExists, uI汇添富实业债债券ACell.Exists);
+        }
+        
+        /// <summary>
+        /// RecordedMethod5 - 使用“RecordedMethod5Params”将参数传递到此方法中。
+        /// </summary>
+        public void RecordedMethod5()
+        {
+            #region Variable Declarations
+            WinEdit uITextBox1Edit = this.UIFundHelperWindow.UITextBox1Window.UITextBox1Edit;
+            WinComboBox uIComboBox1ComboBox = this.UIFundHelperWindow.UIComboBox1Window.UIComboBox1ComboBox;
+            WinButton uI搜索Button = this.UIFundHelperWindow.UI搜索Window.UI搜索Button;
+            #endregion
+
+            // 在 “textBox1” 文本框 中键入“南方中票A”
+            uITextBox1Edit.Text = this.RecordedMethod5Params.UITextBox1EditText;
+
+            // 在 “textBox1” 文本框 中键入“{CapsLock}”
+            Keyboard.SendKeys(uITextBox1Edit, this.RecordedMethod5Params.UITextBox1EditSendKeys, ModifierKeys.None);
+
+            // 在 “comboBox1” 组合框 中选择“全称”
+            uIComboBox1ComboBox.SelectedItem = this.RecordedMethod5Params.UIComboBox1ComboBoxSelectedItem;
+
+            // 单击 “搜索” 按钮
+            Mouse.Click(uI搜索Button, new Point(21, 7));
+        }
+        
+        /// <summary>
+        /// AssertMethod4 - 使用“AssertMethod4ExpectedValues”将参数传递到此方法中。
+        /// </summary>
+        public void AssertMethod4()
+        {
+            #region Variable Declarations
+            WinCell uI南方中票ACell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行16Row.UI南方中票ACell;
+            #endregion
+
+            // 确认 “南方中票A” 单元格 的属性“Exists”等于“True”
+            Assert.AreEqual(this.AssertMethod4ExpectedValues.UI南方中票ACellExists, uI南方中票ACell.Exists);
+        }
+        
+        /// <summary>
+        /// RecordedMethod6 - 使用“RecordedMethod6Params”将参数传递到此方法中。
+        /// </summary>
+        public void RecordedMethod6()
+        {
+            #region Variable Declarations
+            WinTitleBar uIFundHelperTitleBar = this.UIFundHelperWindow.UIFundHelperTitleBar;
+            WinComboBox uI基金排名ComboBox = this.UIFundHelperWindow.UIComboBox3Window.UI基金排名ComboBox;
+            WinButton uIGOButton = this.UIFundHelperWindow.UIGOWindow.UIGOButton;
+            WinCell uIItem511210Cell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行0Row.UIItem511210Cell;
+            #endregion
+
+            // 单击 “Fund Helper” 标题栏
+            Mouse.Click(uIFundHelperTitleBar, new Point(289, 18));
+
+            // 在 “基金排名” 组合框 中选择“单位净值（元）”
+            uI基金排名ComboBox.SelectedItem = this.RecordedMethod6Params.UI基金排名ComboBoxSelectedItem;
+
+            // 单击 “GO” 按钮
+            Mouse.Click(uIGOButton, new Point(46, 11));
+
+            // 单击 “511210” 单元格
+            Mouse.Click(uIItem511210Cell, new Point(82, 15));
+        }
+        
+        /// <summary>
+        /// AssertMethod5 - 使用“AssertMethod5ExpectedValues”将参数传递到此方法中。
+        /// </summary>
+        public void AssertMethod5()
+        {
+            #region Variable Declarations
+            WinCell uI博时上证企债30ETFCell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行0Row.UI博时上证企债30ETFCell;
+            #endregion
+
+            // 确认 “博时上证企债30ETF” 单元格 的属性“Exists”等于“True”
+            Assert.AreEqual(this.AssertMethod5ExpectedValues.UI博时上证企债30ETFCellExists, uI博时上证企债30ETFCell.Exists);
+        }
+        
+        /// <summary>
+        /// RecordedMethod7
+        /// </summary>
+        public void RecordedMethod7()
+        {
+            #region Variable Declarations
+            WinTitleBar uIFundHelperTitleBar = this.UIFundHelperWindow.UIFundHelperTitleBar;
+            WinButton uI重置Button = this.UIFundHelperWindow.UI重置Window.UI重置Button;
+            WinCell uIItem1082Cell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行0Row1.UIItem1082Cell;
+            #endregion
+
+            // 单击 “Fund Helper” 标题栏
+            Mouse.Click(uIFundHelperTitleBar, new Point(334, 17));
+
+            // 单击 “重置” 按钮
+            Mouse.Click(uI重置Button, new Point(25, 15));
+
+            // 单击 “1.082” 单元格
+            Mouse.Click(uIItem1082Cell, new Point(91, 12));
+        }
+        
+        /// <summary>
+        /// AssertMethod6 - 使用“AssertMethod6ExpectedValues”将参数传递到此方法中。
+        /// </summary>
+        public void AssertMethod6()
+        {
+            #region Variable Declarations
+            WinCell uI华夏成长Cell = this.UIFundHelperWindow.UIDataGridView1Window.UIDataGridViewTable.UI行0Row1.UI华夏成长Cell;
+            #endregion
+
+            // 确认 “华夏成长” 单元格 的属性“Exists”等于“True”
+            Assert.AreEqual(this.AssertMethod6ExpectedValues.UI华夏成长CellExists, uI华夏成长Cell.Exists);
+        }
+        
         #region Properties
         public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues
         {
@@ -96,6 +286,126 @@ namespace SearchTest
                     this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();
                 }
                 return this.mAssertMethod1ExpectedValues;
+            }
+        }
+        
+        public virtual RecordedMethod2Params RecordedMethod2Params
+        {
+            get
+            {
+                if ((this.mRecordedMethod2Params == null))
+                {
+                    this.mRecordedMethod2Params = new RecordedMethod2Params();
+                }
+                return this.mRecordedMethod2Params;
+            }
+        }
+        
+        public virtual RecordedMethod3Params RecordedMethod3Params
+        {
+            get
+            {
+                if ((this.mRecordedMethod3Params == null))
+                {
+                    this.mRecordedMethod3Params = new RecordedMethod3Params();
+                }
+                return this.mRecordedMethod3Params;
+            }
+        }
+        
+        public virtual AssertMethod2ExpectedValues AssertMethod2ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod2ExpectedValues == null))
+                {
+                    this.mAssertMethod2ExpectedValues = new AssertMethod2ExpectedValues();
+                }
+                return this.mAssertMethod2ExpectedValues;
+            }
+        }
+        
+        public virtual RecordedMethod4Params RecordedMethod4Params
+        {
+            get
+            {
+                if ((this.mRecordedMethod4Params == null))
+                {
+                    this.mRecordedMethod4Params = new RecordedMethod4Params();
+                }
+                return this.mRecordedMethod4Params;
+            }
+        }
+        
+        public virtual AssertMethod3ExpectedValues AssertMethod3ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod3ExpectedValues == null))
+                {
+                    this.mAssertMethod3ExpectedValues = new AssertMethod3ExpectedValues();
+                }
+                return this.mAssertMethod3ExpectedValues;
+            }
+        }
+        
+        public virtual RecordedMethod5Params RecordedMethod5Params
+        {
+            get
+            {
+                if ((this.mRecordedMethod5Params == null))
+                {
+                    this.mRecordedMethod5Params = new RecordedMethod5Params();
+                }
+                return this.mRecordedMethod5Params;
+            }
+        }
+        
+        public virtual AssertMethod4ExpectedValues AssertMethod4ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod4ExpectedValues == null))
+                {
+                    this.mAssertMethod4ExpectedValues = new AssertMethod4ExpectedValues();
+                }
+                return this.mAssertMethod4ExpectedValues;
+            }
+        }
+        
+        public virtual RecordedMethod6Params RecordedMethod6Params
+        {
+            get
+            {
+                if ((this.mRecordedMethod6Params == null))
+                {
+                    this.mRecordedMethod6Params = new RecordedMethod6Params();
+                }
+                return this.mRecordedMethod6Params;
+            }
+        }
+        
+        public virtual AssertMethod5ExpectedValues AssertMethod5ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod5ExpectedValues == null))
+                {
+                    this.mAssertMethod5ExpectedValues = new AssertMethod5ExpectedValues();
+                }
+                return this.mAssertMethod5ExpectedValues;
+            }
+        }
+        
+        public virtual AssertMethod6ExpectedValues AssertMethod6ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod6ExpectedValues == null))
+                {
+                    this.mAssertMethod6ExpectedValues = new AssertMethod6ExpectedValues();
+                }
+                return this.mAssertMethod6ExpectedValues;
             }
         }
         
@@ -115,6 +425,26 @@ namespace SearchTest
         #region Fields
         private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
         
+        private RecordedMethod2Params mRecordedMethod2Params;
+        
+        private RecordedMethod3Params mRecordedMethod3Params;
+        
+        private AssertMethod2ExpectedValues mAssertMethod2ExpectedValues;
+        
+        private RecordedMethod4Params mRecordedMethod4Params;
+        
+        private AssertMethod3ExpectedValues mAssertMethod3ExpectedValues;
+        
+        private RecordedMethod5Params mRecordedMethod5Params;
+        
+        private AssertMethod4ExpectedValues mAssertMethod4ExpectedValues;
+        
+        private RecordedMethod6Params mRecordedMethod6Params;
+        
+        private AssertMethod5ExpectedValues mAssertMethod5ExpectedValues;
+        
+        private AssertMethod6ExpectedValues mAssertMethod6ExpectedValues;
+        
         private UIFundHelperWindow mUIFundHelperWindow;
         #endregion
     }
@@ -131,6 +461,171 @@ namespace SearchTest
         /// 确认 “chart1” Chart 的属性“Exists”等于“True”
         /// </summary>
         public bool UIChart1ChartExists = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“RecordedMethod2”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class RecordedMethod2Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 在 “类型过滤” 组合框 中选择“货币型”
+        /// </summary>
+        public string UI类型过滤ComboBoxSelectedItem = "货币型";
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“RecordedMethod3”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class RecordedMethod3Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 在 “类型过滤” 组合框 中选择“货币型”
+        /// </summary>
+        public string UI类型过滤ComboBoxSelectedItem = "货币型";
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“AssertMethod2”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class AssertMethod2ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 确认 “货币型” 单元格 的属性“Exists”等于“True”
+        /// </summary>
+        public bool UI货币型CellExists = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“RecordedMethod4”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class RecordedMethod4Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 在 “textBox1” 文本框 中键入“000122”
+        /// </summary>
+        public string UITextBox1EditText = "000122";
+        
+        /// <summary>
+        /// 在 “comboBox1” 组合框 中选择“代码”
+        /// </summary>
+        public string UIComboBox1ComboBoxSelectedItem = "代码";
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“AssertMethod3”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class AssertMethod3ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 确认 “汇添富实业债债券A” 单元格 的属性“Exists”等于“True”
+        /// </summary>
+        public bool UI汇添富实业债债券ACellExists = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“RecordedMethod5”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class RecordedMethod5Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 在 “textBox1” 文本框 中键入“南方中票A”
+        /// </summary>
+        public string UITextBox1EditText = "南方中票A";
+        
+        /// <summary>
+        /// 在 “textBox1” 文本框 中键入“{CapsLock}”
+        /// </summary>
+        public string UITextBox1EditSendKeys = "{CapsLock}";
+        
+        /// <summary>
+        /// 在 “comboBox1” 组合框 中选择“全称”
+        /// </summary>
+        public string UIComboBox1ComboBoxSelectedItem = "全称";
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“AssertMethod4”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class AssertMethod4ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 确认 “南方中票A” 单元格 的属性“Exists”等于“True”
+        /// </summary>
+        public bool UI南方中票ACellExists = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“RecordedMethod6”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class RecordedMethod6Params
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 在 “基金排名” 组合框 中选择“单位净值（元）”
+        /// </summary>
+        public string UI基金排名ComboBoxSelectedItem = "单位净值（元）";
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“AssertMethod5”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class AssertMethod5ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 确认 “博时上证企债30ETF” 单元格 的属性“Exists”等于“True”
+        /// </summary>
+        public bool UI博时上证企债30ETFCellExists = true;
+        #endregion
+    }
+    
+    /// <summary>
+    /// 要传递到“AssertMethod6”中的参数
+    /// </summary>
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class AssertMethod6ExpectedValues
+    {
+        
+        #region Fields
+        /// <summary>
+        /// 确认 “华夏成长” 单元格 的属性“Exists”等于“True”
+        /// </summary>
+        public bool UI华夏成长CellExists = true;
         #endregion
     }
     
@@ -219,6 +714,117 @@ namespace SearchTest
                 return this.mUI返回Window;
             }
         }
+        
+        public UIComboBox2Window UIComboBox2Window
+        {
+            get
+            {
+                if ((this.mUIComboBox2Window == null))
+                {
+                    this.mUIComboBox2Window = new UIComboBox2Window(this);
+                }
+                return this.mUIComboBox2Window;
+            }
+        }
+        
+        public UI过滤Window UI过滤Window
+        {
+            get
+            {
+                if ((this.mUI过滤Window == null))
+                {
+                    this.mUI过滤Window = new UI过滤Window(this);
+                }
+                return this.mUI过滤Window;
+            }
+        }
+        
+        public UITextBox1Window UITextBox1Window
+        {
+            get
+            {
+                if ((this.mUITextBox1Window == null))
+                {
+                    this.mUITextBox1Window = new UITextBox1Window(this);
+                }
+                return this.mUITextBox1Window;
+            }
+        }
+        
+        public UIComboBox1Window UIComboBox1Window
+        {
+            get
+            {
+                if ((this.mUIComboBox1Window == null))
+                {
+                    this.mUIComboBox1Window = new UIComboBox1Window(this);
+                }
+                return this.mUIComboBox1Window;
+            }
+        }
+        
+        public UI搜索Window UI搜索Window
+        {
+            get
+            {
+                if ((this.mUI搜索Window == null))
+                {
+                    this.mUI搜索Window = new UI搜索Window(this);
+                }
+                return this.mUI搜索Window;
+            }
+        }
+        
+        public WinTitleBar UIFundHelperTitleBar
+        {
+            get
+            {
+                if ((this.mUIFundHelperTitleBar == null))
+                {
+                    this.mUIFundHelperTitleBar = new WinTitleBar(this);
+                    #region 搜索条件
+                    this.mUIFundHelperTitleBar.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUIFundHelperTitleBar;
+            }
+        }
+        
+        public UIComboBox3Window UIComboBox3Window
+        {
+            get
+            {
+                if ((this.mUIComboBox3Window == null))
+                {
+                    this.mUIComboBox3Window = new UIComboBox3Window(this);
+                }
+                return this.mUIComboBox3Window;
+            }
+        }
+        
+        public UIGOWindow UIGOWindow
+        {
+            get
+            {
+                if ((this.mUIGOWindow == null))
+                {
+                    this.mUIGOWindow = new UIGOWindow(this);
+                }
+                return this.mUIGOWindow;
+            }
+        }
+        
+        public UI重置Window UI重置Window
+        {
+            get
+            {
+                if ((this.mUI重置Window == null))
+                {
+                    this.mUI重置Window = new UI重置Window(this);
+                }
+                return this.mUI重置Window;
+            }
+        }
         #endregion
         
         #region Fields
@@ -233,6 +839,24 @@ namespace SearchTest
         private UI列表Window mUI列表Window;
         
         private UI返回Window mUI返回Window;
+        
+        private UIComboBox2Window mUIComboBox2Window;
+        
+        private UI过滤Window mUI过滤Window;
+        
+        private UITextBox1Window mUITextBox1Window;
+        
+        private UIComboBox1Window mUIComboBox1Window;
+        
+        private UI搜索Window mUI搜索Window;
+        
+        private WinTitleBar mUIFundHelperTitleBar;
+        
+        private UIComboBox3Window mUIComboBox3Window;
+        
+        private UIGOWindow mUIGOWindow;
+        
+        private UI重置Window mUI重置Window;
         #endregion
     }
     
@@ -293,10 +917,80 @@ namespace SearchTest
                 return this.mUI行6Row;
             }
         }
+        
+        public UI行6Row1 UI行6Row1
+        {
+            get
+            {
+                if ((this.mUI行6Row1 == null))
+                {
+                    this.mUI行6Row1 = new UI行6Row1(this);
+                }
+                return this.mUI行6Row1;
+            }
+        }
+        
+        public UI行100Row UI行100Row
+        {
+            get
+            {
+                if ((this.mUI行100Row == null))
+                {
+                    this.mUI行100Row = new UI行100Row(this);
+                }
+                return this.mUI行100Row;
+            }
+        }
+        
+        public UI行16Row UI行16Row
+        {
+            get
+            {
+                if ((this.mUI行16Row == null))
+                {
+                    this.mUI行16Row = new UI行16Row(this);
+                }
+                return this.mUI行16Row;
+            }
+        }
+        
+        public UI行0Row UI行0Row
+        {
+            get
+            {
+                if ((this.mUI行0Row == null))
+                {
+                    this.mUI行0Row = new UI行0Row(this);
+                }
+                return this.mUI行0Row;
+            }
+        }
+        
+        public UI行0Row1 UI行0Row1
+        {
+            get
+            {
+                if ((this.mUI行0Row1 == null))
+                {
+                    this.mUI行0Row1 = new UI行0Row1(this);
+                }
+                return this.mUI行0Row1;
+            }
+        }
         #endregion
         
         #region Fields
         private UI行6Row mUI行6Row;
+        
+        private UI行6Row1 mUI行6Row1;
+        
+        private UI行100Row mUI行100Row;
+        
+        private UI行16Row mUI行16Row;
+        
+        private UI行0Row mUI行0Row;
+        
+        private UI行0Row1 mUI行0Row1;
         #endregion
     }
     
@@ -334,6 +1028,227 @@ namespace SearchTest
         
         #region Fields
         private WinCell mUIYFDTTLCHBACell;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI行6Row1 : WinRow
+    {
+        
+        public UI行6Row1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties.Add(new PropertyExpression(WinRow.PropertyNames.Value, ";YFDTTLCHBA;易方达天天理财货币A;货币型;0;0;0;0", PropertyExpressionOperator.Contains));
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UI货币型Cell
+        {
+            get
+            {
+                if ((this.mUI货币型Cell == null))
+                {
+                    this.mUI货币型Cell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUI货币型Cell.SearchProperties[WinCell.PropertyNames.Value] = "货币型";
+                    this.mUI货币型Cell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI货币型Cell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUI货币型Cell;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI行100Row : WinRow
+    {
+        
+        public UI行100Row(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties.Add(new PropertyExpression(WinRow.PropertyNames.Value, ";HTFSYZZQA;汇添富实业债债券A;债券型;1.062;1.062;0.001;0.09", PropertyExpressionOperator.Contains));
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UI汇添富实业债债券ACell
+        {
+            get
+            {
+                if ((this.mUI汇添富实业债债券ACell == null))
+                {
+                    this.mUI汇添富实业债债券ACell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUI汇添富实业债债券ACell.SearchProperties[WinCell.PropertyNames.Value] = "汇添富实业债债券A";
+                    this.mUI汇添富实业债债券ACell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI汇添富实业债债券ACell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUI汇添富实业债债券ACell;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI行16Row : WinRow
+    {
+        
+        public UI行16Row(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties.Add(new PropertyExpression(WinRow.PropertyNames.Value, ";NFZPA;南方中票A;债券指数;1.0587;1.0587;0.0002;0.02", PropertyExpressionOperator.Contains));
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UI南方中票ACell
+        {
+            get
+            {
+                if ((this.mUI南方中票ACell == null))
+                {
+                    this.mUI南方中票ACell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUI南方中票ACell.SearchProperties[WinCell.PropertyNames.Value] = "南方中票A";
+                    this.mUI南方中票ACell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI南方中票ACell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUI南方中票ACell;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI行0Row : WinRow
+    {
+        
+        public UI行0Row(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinRow.PropertyNames.Value] = "511210;BSSZQZ30ETF;博时上证企债30ETF;债券指数;102.6994;1.027;-0.0327;-0.03";
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UIItem511210Cell
+        {
+            get
+            {
+                if ((this.mUIItem511210Cell == null))
+                {
+                    this.mUIItem511210Cell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUIItem511210Cell.SearchProperties[WinCell.PropertyNames.Value] = "511210";
+                    this.mUIItem511210Cell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUIItem511210Cell;
+            }
+        }
+        
+        public WinCell UI博时上证企债30ETFCell
+        {
+            get
+            {
+                if ((this.mUI博时上证企债30ETFCell == null))
+                {
+                    this.mUI博时上证企债30ETFCell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUI博时上证企债30ETFCell.SearchProperties[WinCell.PropertyNames.Value] = "博时上证企债30ETF";
+                    this.mUI博时上证企债30ETFCell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI博时上证企债30ETFCell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUIItem511210Cell;
+        
+        private WinCell mUI博时上证企债30ETFCell;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI行0Row1 : WinRow
+    {
+        
+        public UI行0Row1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinRow.PropertyNames.Value] = "000001;HXCZ;华夏成长;混合型;1.082;3.183;0.007;0.65";
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UIItem1082Cell
+        {
+            get
+            {
+                if ((this.mUIItem1082Cell == null))
+                {
+                    this.mUIItem1082Cell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUIItem1082Cell.SearchProperties[WinCell.PropertyNames.Value] = "1.082";
+                    this.mUIItem1082Cell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUIItem1082Cell;
+            }
+        }
+        
+        public WinCell UI华夏成长Cell
+        {
+            get
+            {
+                if ((this.mUI华夏成长Cell == null))
+                {
+                    this.mUI华夏成长Cell = new WinCell(this);
+                    #region 搜索条件
+                    this.mUI华夏成长Cell.SearchProperties[WinCell.PropertyNames.Value] = "华夏成长";
+                    this.mUI华夏成长Cell.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI华夏成长Cell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUIItem1082Cell;
+        
+        private WinCell mUI华夏成长Cell;
         #endregion
     }
     
@@ -517,6 +1432,292 @@ namespace SearchTest
         
         #region Fields
         private WinButton mUI返回Button;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UIComboBox2Window : WinWindow
+    {
+        
+        public UIComboBox2Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "comboBox2";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinComboBox UI类型过滤ComboBox
+        {
+            get
+            {
+                if ((this.mUI类型过滤ComboBox == null))
+                {
+                    this.mUI类型过滤ComboBox = new WinComboBox(this);
+                    #region 搜索条件
+                    this.mUI类型过滤ComboBox.SearchProperties[WinComboBox.PropertyNames.Name] = "类型过滤";
+                    this.mUI类型过滤ComboBox.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI类型过滤ComboBox;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinComboBox mUI类型过滤ComboBox;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI过滤Window : WinWindow
+    {
+        
+        public UI过滤Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "button2";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UI过滤Button
+        {
+            get
+            {
+                if ((this.mUI过滤Button == null))
+                {
+                    this.mUI过滤Button = new WinButton(this);
+                    #region 搜索条件
+                    this.mUI过滤Button.SearchProperties[WinButton.PropertyNames.Name] = "过滤";
+                    this.mUI过滤Button.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI过滤Button;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUI过滤Button;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UITextBox1Window : WinWindow
+    {
+        
+        public UITextBox1Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "textBox1";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UITextBox1Edit
+        {
+            get
+            {
+                if ((this.mUITextBox1Edit == null))
+                {
+                    this.mUITextBox1Edit = new WinEdit(this);
+                    #region 搜索条件
+                    this.mUITextBox1Edit.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUITextBox1Edit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUITextBox1Edit;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UIComboBox1Window : WinWindow
+    {
+        
+        public UIComboBox1Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "comboBox1";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinComboBox UIComboBox1ComboBox
+        {
+            get
+            {
+                if ((this.mUIComboBox1ComboBox == null))
+                {
+                    this.mUIComboBox1ComboBox = new WinComboBox(this);
+                    #region 搜索条件
+                    this.mUIComboBox1ComboBox.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUIComboBox1ComboBox;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinComboBox mUIComboBox1ComboBox;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI搜索Window : WinWindow
+    {
+        
+        public UI搜索Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "button1";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UI搜索Button
+        {
+            get
+            {
+                if ((this.mUI搜索Button == null))
+                {
+                    this.mUI搜索Button = new WinButton(this);
+                    #region 搜索条件
+                    this.mUI搜索Button.SearchProperties[WinButton.PropertyNames.Name] = "搜索";
+                    this.mUI搜索Button.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI搜索Button;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUI搜索Button;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UIComboBox3Window : WinWindow
+    {
+        
+        public UIComboBox3Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "comboBox3";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinComboBox UI基金排名ComboBox
+        {
+            get
+            {
+                if ((this.mUI基金排名ComboBox == null))
+                {
+                    this.mUI基金排名ComboBox = new WinComboBox(this);
+                    #region 搜索条件
+                    this.mUI基金排名ComboBox.SearchProperties[WinComboBox.PropertyNames.Name] = "基金排名";
+                    this.mUI基金排名ComboBox.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI基金排名ComboBox;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinComboBox mUI基金排名ComboBox;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UIGOWindow : WinWindow
+    {
+        
+        public UIGOWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "button6";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIGOButton
+        {
+            get
+            {
+                if ((this.mUIGOButton == null))
+                {
+                    this.mUIGOButton = new WinButton(this);
+                    #region 搜索条件
+                    this.mUIGOButton.SearchProperties[WinButton.PropertyNames.Name] = "GO";
+                    this.mUIGOButton.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUIGOButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIGOButton;
+        #endregion
+    }
+    
+    [GeneratedCode("编码的 UI 测试生成器", "10.0.30319.1")]
+    public class UI重置Window : WinWindow
+    {
+        
+        public UI重置Window(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region 搜索条件
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "button7";
+            this.WindowTitles.Add("Fund Helper");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UI重置Button
+        {
+            get
+            {
+                if ((this.mUI重置Button == null))
+                {
+                    this.mUI重置Button = new WinButton(this);
+                    #region 搜索条件
+                    this.mUI重置Button.SearchProperties[WinButton.PropertyNames.Name] = "重置";
+                    this.mUI重置Button.WindowTitles.Add("Fund Helper");
+                    #endregion
+                }
+                return this.mUI重置Button;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUI重置Button;
         #endregion
     }
 }
